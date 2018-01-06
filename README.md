@@ -62,18 +62,16 @@ Textbooks are optional but recommended
 The lecture schedule is subject to change throughout the semester, but here is
 the current plan. Assignments and due dates will be updated as they're assigned in class.
 
-**TODO**
-
 ### January
 
-| Date     | Description                                       | Assigned     | Due       | Recommended Reading               |
-|----------|---------------------------------------------------|--------------|-----------|-----------------------------------|
-| 1/11     | Intro - applications of computer graphics         |              |           |                                   |
-| 1/16     | C++ overview / git basics                         | [Lab 0]()    |           |                                   |
-| 1/18     | Overview of graphics pipeline                     |              |           |                                   |
-| 1/23     | Rasterization / Barycentric coordinates / Color   | [Lab 1]()    | [Lab 0]() |                                   |
-| 1/25     | OpenGL basics / 2D coordinate systems             |              |           |                                   |
-| 1/30     | Graphics math - vectors and matrices              | [Lab 2]()    | [Lab 1]() |                                   |
+| Date     | Description                                       | Assigned                       | Due                               | Recommended Reading               |
+|----------|---------------------------------------------------|--------------------------------|-----------------------------------|-----------------------------------|
+| 1/11     | Intro - applications of computer graphics         |                                |                                   |                                   |
+| 1/16     | C++ overview / git basics                         | [Lab 0](./labs/lab0/README.md) |                                   |                                   |
+| 1/18     | Overview of graphics pipeline                     |                                |                                   |                                   |
+| 1/23     | Rasterization / Barycentric coordinates / Color   | [Lab 1](./labs/lab1/README.md) | [Lab 0](./labs/lab0/README.md)    |                                   |
+| 1/25     | OpenGL basics / 2D coordinate systems             |                                |                                   |                                   |
+| 1/30     | Graphics math - vectors and matrices              | [Lab 2]()                      | [Lab 1](./labs/lab0/README.md)    |                                   |
 
 ### February
 
