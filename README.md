@@ -158,9 +158,54 @@ it to Piazza.
 
 ## Policy on Collaboration and Academic Misconduct
 
+Collaboration IS encouraged, however, all submitted individual work must be your
+own and you must acknowledge your collaborators at the beginning of the
+submission.
+
+On any group project, every team member is expected to make a substantial
+contribution. The distribution of the work, however, is up to the team.
+
+A few specifics for the assignments.  You may:
+
+* Work with the other people on your team.
+* Share ideas with other teams.
+* Help other teams debug their code.
+
+You may NOT:
+
+* Share code that you wrote with other teams.
+* Submit code that someone on your team did not write.
+* Modify another's code and claim it as your own.
+
+Using resources in addition to the course materials is encouraged. But, be sure
+to properly cite additional resources. Remember, it is NEVER acceptable to pass
+others work off as your own.
+
+Paraphrasing or quoting another’s work without citing the source is a form of
+academic misconduct. Even inadvertent or unintentional misuse or appropriation
+of another’s work (such as relying heavily on source material that is not
+acknowledged) is considered plagiarism. If you have any questions about using
+and citing sources, you are expected to ask for clarification. My rule of thumb
+is if I am in doubt, I cite.
+
+By participating in this class, you agree to abide by the [student code of
+conduct](http://www.montana.edu/policy/student_conduct/).  Please review the
+policy.
+
 ## Policy on Assignments
 
+All assignments will be submitted in by midnight in Hawaii on the due date. Late
+assignments will not be accepted.
+
+For descriptive assignments and reports, the submission should be typed up and
+submitted as a PDF (LaTeX suggested but not required). For code assignments,
+well organized source code with clear comments should be submitted.
+
 ## Policy on Class Attendance
+
+Class attendance is required. If a student must miss a class, please notify me
+as soon as possible. Note that class participation is part of your final grade.
+If you do not show up you cannot participate.
 
 ## Classroom Etiquette
 
@@ -172,5 +217,5 @@ grade.
 ## Special needs information
 
 If you have a documented disability for which you are or may be requesting an
-accommodation(s), you are encouraged to contact your instructor and Disabled
+accommodation(s), you are encouraged to contact me and Disabled
 Student Services as soon as possible.
