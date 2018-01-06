@@ -180,9 +180,10 @@ to bring it up to date.
 
 For the labs, you may be able to just demo your work to me in class or in office
 hours before the deadline, but this may be difficult as there are many students.
-An alternative would be to submit a link on D2L with your team members' names,
-for the assignment you're turning in and a link to your repository with all your
-changes committed and pushed prior to the deadline.
+An alternative would be for the assignment that you are turning in, submit on
+D2L.  The submission should contain your your team members' names, a link to
+your repository, and hash value of the commit that you are submitting.  (See
+below for how to get a commit's hash.)
 
 ** Note: Normally with git, forks are used to make changes to a repository that
 you don't own. After implementing a feature, usually a pull request is issued
