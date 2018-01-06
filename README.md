@@ -141,9 +141,10 @@ At the end of the course, students should be able to
 
 ## Course Evaluation
 
+* Participation 5%
 * Labs 20%
 * Programs 40%
-* Midterm 20%
+* Midterm 15%
 * Final 20%
 
 ## Discussion Board
