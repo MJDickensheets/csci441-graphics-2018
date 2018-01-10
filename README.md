@@ -195,7 +195,7 @@ policy.
 
 ## Policy on Assignments
 
-All assignments will be submitted in by midnight in Hawaii on the due date. Late
+All assignments must be submitted by the start of class on the due date. Late
 assignments will not be accepted.
 
 For descriptive assignments and reports, the submission should be typed up and
