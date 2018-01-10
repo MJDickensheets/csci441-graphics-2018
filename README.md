@@ -132,6 +132,7 @@ representations.
 ## Course Offerings
 
 At the end of the course, students should be able to
+
 * Write basic graphical applications using OpenGL and C++
 * Understand the modern graphics pipeline and how to leverage hardware to write
   realtime graphics applications
