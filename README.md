@@ -150,12 +150,11 @@ At the end of the course, students should be able to
 
 ## Discussion Board
 
-Group discussions, questions and announcements will take place on
-[Piazza](https://piazza.com/montana/spring2018/csci441/home). It is OK to send
-me an email if you have a question that you feel is not appropriate to share
-with the class.  If, however, you send me an email with a question for which the
-response would be useful to the rest of the class, I will likely ask you to post
-it to Piazza.
+Group discussions, questions, and announcements will take place using
+Brightspace.  It is OK to send me an email if you have a question that you feel
+is not appropriate to share with the class.  If, however, you send me an email
+with a question for which the response would be useful to the rest of the class,
+I will likely ask you to post it.
 
 ## Policy on Collaboration and Academic Misconduct
 
