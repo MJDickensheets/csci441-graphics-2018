@@ -9,9 +9,9 @@ software, CAD design software, image manipulation packages such as Photoshop or
 Illustrator, video games, medical visualisation tools and much, much more. In
 this class, we will cover some of the fundamentals of computer graphics; from
 transformations and camera projections, to light and shading models, to
-simulations that approximate phenomena in the real world. We will use C++, Qt
-and OpenGL to explore practical, realtime, graphics programming while learning
-the theory behind it so you can apply it to other environments.
+simulations that approximate phenomena in the real world. We will use C++ and
+OpenGL to explore practical, realtime, graphics programming while learning the
+theory behind it so you can apply it to other environments.
 
 ## Assignments
 
@@ -54,7 +54,7 @@ Textbooks are optional but recommended
 ## Online Resources
 
 * [OpenGL Reference Pages](https://www.opengl.org/sdk/docs/man/)
-* [Qt 5 Documentation](http://doc.qt.io/qt-5/)
+* [Learn OpenGL Website](https://learnopengl.com/)(referred to as LoGL in recommended reading below)
 * [C++ Documentation](http://www.cplusplus.com/doc/tutorial/)
 
 ## Class schedule
