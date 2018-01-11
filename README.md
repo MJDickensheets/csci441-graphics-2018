@@ -66,7 +66,7 @@ the current plan. Assignments and due dates will be updated as they're assigned 
 
 | Date     | Description                                       | Assigned                       | Due                               | Recommended Reading               |
 |----------|---------------------------------------------------|--------------------------------|-----------------------------------|-----------------------------------|
-| 1/11     | Intro - applications of computer graphics         |                                |                                   |                                   |
+| 1/11     | Intro - applications of computer graphics         |                                |                                   | FoCG Chapter 1                    |
 | 1/16     | C++ overview / git basics                         | [Lab 0](./labs/lab0/README.md) |                                   |                                   |
 | 1/18     | Overview of graphics pipeline                     |                                |                                   |                                   |
 | 1/23     | Rasterization / Barycentric coordinates / Color   | [Lab 1](./labs/lab1/README.md) | [Lab 0](./labs/lab0/README.md)    |                                   |
