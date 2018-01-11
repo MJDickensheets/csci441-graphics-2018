@@ -76,16 +76,16 @@ the current plan. Assignments and due dates will be updated as they're assigned 
 **BELOW HERE IS VERY LIKELY TO CHANGE**
 ### February
 
-| Date     | Description                                               | Assigned     | Due       | Recommended Reading               |
-|----------|-----------------------------------------------------------|--------------|-----------|-----------------------------------|
-| 2/1      | Orthographic projection / OpenGL primitives               |              |           |                                   |
-| 2/6      | OpenGL / C++ Lab Overview and Program 1 Assigment         | [Lab 3](), [Program 1]()||                                   |
-| 2/8      | Lab day                                                   |              | [Lab 2]() |                                   |
-| 2/13     | Model, View, Projection Matrices                          | [Lab 4]()    | [Lab 3]() |                                   |
-| 2/15     | Transform Matrices - Translation, Rotation and Scale      |              |           |                                   |
-| 2/20     | Perspective Projection and the Depth Buffer               |              |           |                                   |
-| 2/22     | Lab day                                                   |              | [Lab 4]() |                                   |
-| 2/27     | Virtual Trackball                                         | [Lab 5]()    | [Program 1]() |                               |
+| Date     | Description                                               | Assigned                 | Due           | Recommended Reading               |
+|----------|-----------------------------------------------------------|--------------------------|---------------|-----------------------------------|
+| 2/1      | Orthographic projection / OpenGL primitives               |                          |               |                                   |
+| 2/6      | OpenGL / C++ Lab Overview and Program 1 Assigment         | [Lab 3](), [Program 1]() | [Lab 2]()     |                                   |
+| 2/8      | Lab day                                                   |                          |               |                                   |
+| 2/13     | Model, View, Projection Matrices                          | [Lab 4]()                | [Lab 3]()     |                                   |
+| 2/15     | Transform Matrices - Translation, Rotation and Scale      |                          |               |                                   |
+| 2/20     | Perspective Projection and the Depth Buffer               |                          |               |                                   |
+| 2/22     | Lab day                                                   |                          | [Lab 4]()     |                                   |
+| 2/27     | Virtual Trackball                                         | [Lab 5]()                | [Program 1]() |                                   |
 
 ### March
 
