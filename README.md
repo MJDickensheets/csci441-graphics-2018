@@ -79,7 +79,7 @@ the current plan. Assignments and due dates will be updated as they're assigned 
 | Date     | Description                                               | Assigned     | Due       | Recommended Reading               |
 |----------|-----------------------------------------------------------|--------------|-----------|-----------------------------------|
 | 2/1      | Orthographic projection / OpenGL primitives               |              |           |                                   |
-| 2/6      | Qt / OpenGL / C++ Lab Overview and Program 1 Assigment    | [Lab 3](), [Program 1]()||                                   |
+| 2/6      | OpenGL / C++ Lab Overview and Program 1 Assigment         | [Lab 3](), [Program 1]()||                                   |
 | 2/8      | Lab day                                                   |              | [Lab 2]() |                                   |
 | 2/13     | Model, View, Projection Matrices                          | [Lab 4]()    | [Lab 3]() |                                   |
 | 2/15     | Transform Matrices - Translation, Rotation and Scale      |              |           |                                   |
