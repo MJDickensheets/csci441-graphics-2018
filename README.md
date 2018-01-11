@@ -40,7 +40,7 @@ David L. Millman, Ph.D.
 
 **Office hours**
 
-Tuesdays and Thursdays 16:30 - 17:30 or by appointment in Barnard 359
+TBA
 
 ## Textbook
 
