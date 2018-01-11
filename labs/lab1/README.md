@@ -37,6 +37,11 @@ Color representation:
 * FoCG Section 3.3 RGB color
 * [Wikipedia: RGB Color Model - Numeric Representations](http://en.wikipedia.org/wiki/RGB_color_model#Numeric_representations)
 
+Bitmap generation:
+
+* [C++ Bitmap Library](https://github.com/ArashPartow/bitmap) - The file
+  `bitmap_image.hpp` is a simple (and awesome) 1 file bitmap library.
+
 ## Part 1 - Bounding box
 
 Retrieve three points (just x,y) from the user. Color can wait until Part 3.

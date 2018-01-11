@@ -97,37 +97,32 @@ side on your Bitbucket repository, there will likely be a box indicating your
 fork is out of sync when I add new labs. You can click the 'Sync now' link to
 automatically pull in the new assignments.
 
-## Install Qt
+## Install CMake
 
-All assignments and labs will be written in C++ using OpenGL and Qt. Qt is a
-cross platform UI framework. There are both commercial and open source licenses
-for Qt.  We'll be using the open source version, which can be downloaded
-[here](http://www.qt.io/download-open-source/).  Follow the instructions for
-installation on your platform.
+All assignments and labs will be build with CMake. You can install it from the
+[cmake downloads page](https://cmake.org/download/).  Follow the instructions
+for your platform.
 
 ## Build Lab 1
 
-Once you have Qt installed, try compiling and running the provided lab 1 code.
-Qt projects are organized using project files (.pro files). The qt command
-`qmake` can generate a Makefile (or an Xcode project, or a Visual Studio
+Once you have cmake installed, try compiling and running the provided lab 1
+code.  Cmake projects are organized using `CMakeLists.txt` files. The `cmake`
+command can generate a Makefile (or an Xcode project, or a Visual Studio
 project). I like to stick to using a Makefile so I can stay in a terminal:
 
     cd lab1
-    qmake
+    mkdir build
+    cd build
+    cmake ..
     make
     ./lab1
 
     Windows users:
-    cd lab1
-    qmake
-    mingw32-make
-    cd release
-    lab1.exe
+    (SOMEONE WILL HAVE TO HELP ME WITH THIS ONE, I DON'T HAVE A WINDOWS BOX)
 
-It should print "Success" to the terminal and triangle.jpg should be a blank,
+It should print "Success" to the terminal and triangle.bmp should be a blank,
 black image.  (In a future lab, it will be your job to make it output a
-triangle). On the lab computers (in EPS 254, and others), multiple versions of
-qt are installed on Fedora. To use the right version of qmake use `qmake-qt5`.
+triangle).
 
 ## How To Save Your Work
 

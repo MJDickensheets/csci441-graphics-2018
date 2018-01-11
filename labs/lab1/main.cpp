@@ -1,6 +1,6 @@
-#include <QImage>
-#include <QColor>
 #include <iostream>
+
+#include "bitmap_image.hpp"
 
 int main(int argc, char** argv) {
     /*
@@ -16,15 +16,15 @@ int main(int argc, char** argv) {
     */
 
     // create an image 640 pixels wide by 480 pixels tall
-    // with a standard 32 bit red, green, blue format
-    QImage image(640, 480, QImage::Format_RGB32);
+    bitmap_image image(640, 480);
 
     /*
       Part 1:
           Calculate the bounding box of the 3 provided points and loop
           over each pixel in that box and set it to white using:
 
-          image.setPixel(x,y, qRgb(255,255,255));
+          rgb_t color = make_color(255, 255, 255);
+          image.set_pixel(x,y,color);
 
       Part 2:
           Modify your loop from part 1. Using barycentric coordinates,
@@ -32,19 +32,14 @@ int main(int argc, char** argv) {
           the 3 provided points. If it is color it white, otherwise
           move on to the next pixel.
 
-          For more on barycentric coordinates:
-          http://en.wikipedia.org/wiki/Barycentric_coordinate_system
-
       Part 3:
           For each pixel in the triangle, calculate the color based on
           the calculated barycentric coordinates and the 3 provided
           colors. Your colors should have been entered as floating point
-          numbers from 0 to 1. Since we have a 32 bit image, the red,
-          green and blue components range from 0 to 255. Be sure to make
-          the conversion.
+          numbers from 0 to 1. The red, green and blue components range
+          from 0 to 255. Be sure to make the conversion.
     */
 
-    bool success = image.save("triangle.jpg",0,100);
-    std::string message = success ? "Success" : "Unable to save";
-    std::cout << message << std::endl;
+    image.save_image("triangle.bmp");
+    std::cout << "Success" << std::endl;
 }
