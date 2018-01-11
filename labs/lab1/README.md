@@ -37,6 +37,10 @@ Color representation:
 * FoCG Section 3.3 RGB color
 * [Wikipedia: RGB Color Model - Numeric Representations](http://en.wikipedia.org/wiki/RGB_color_model#Numeric_representations)
 
+Triangle Rasterization
+
+* FoCG Section 8.1.2 - Triangle Rasterization
+
 Bitmap generation:
 
 * [C++ Bitmap Library](https://github.com/ArashPartow/bitmap) - The file
