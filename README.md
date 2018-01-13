@@ -28,7 +28,7 @@ to give you time in class to work on your assignments with me available to ask
 questions.  All assignments and other resources for the class will be made
 available via Bitbucket:
 
-https://bitbucket.org/msu-cs/csci440-spring2018
+https://bitbucket.org/msu-cs/csci441-spring2018
 
 ## Meeting Times
 
