@@ -68,8 +68,8 @@ the current plan. Assignments and due dates will be updated as they're assigned 
 |----------|---------------------------------------------------|--------------------------------|-----------------------------------|-----------------------------------|
 | 1/11     | Intro - applications of computer graphics         | [Lab 0](./labs/lab0/README.md) |                                   | FoCG Chapter 1                    |
 | 1/16     | C++ overview / git basics                         |                                |                                   |                                   |
-| 1/18     | Overview of graphics pipeline                     | [Lab 1](./labs/lab1/README.md) | [Lab 0](./labs/lab0/README.md)    |                                   |
-| 1/23     | Rasterization / Barycentric coordinates / Color   |                                |                                   |                                   |
+| 1/18     | Rasterization / Barycentric coordinates / Color   | [Lab 1](./labs/lab1/README.md) | [Lab 0](./labs/lab0/README.md)    | FoCG 2.7.1, 3.3, 8.1.2            |
+| 1/23     | Overview of graphics pipeline                     |                                |                                   |                                   |
 | 1/25     | OpenGL basics / 2D coordinate systems             | [Lab 2]()                      | [Lab 1](./labs/lab0/README.md)    |                                   |
 | 1/30     | Graphics math - vectors and matrices              |                                |                                   |                                   |
 
