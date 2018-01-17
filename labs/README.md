@@ -58,7 +58,7 @@ To download your repository so it's ready for modifications, we need to clone
 it.  Once git is installed, run the following command with <repo url> replaced
 with the url to your repository (shown in the upper left of the Overview page on
 Bitbucket).  It'll look something like
-`https://david_millman@bitbucket.org/david_millman/csci440-spring2018.git`
+`https://david_millman@bitbucket.org/david_millman/csci441-spring2018.git`
 
     git clone <repo url>
 
@@ -73,7 +73,7 @@ I'll be adding assignments here throughout the semester so you'll need to add
 this repository as a remote that you can pull changes from. Make sure you cd
 into your repository, something like (depending on what you named it):
 
-    cd csci440-spring2018
+    cd csci441-spring2018
 
 Then let's list what remotes we currently have:
 
@@ -84,7 +84,7 @@ You should see two entries for your Bitbucket repository, one (fetch) and one
 to/from that url. We want to add another entry that we can explicitly pull from
 to merge in assignments as I add them. To do that, run the following:
 
-    git remote add csci441 https://bitbucket.org/msu-cs/csci440-spring2018
+    git remote add csci441 https://bitbucket.org/msu-cs/csci441-spring2018
 
 Now if you run the `git remote -v` command you'll see two additional entries.
 You won't have permission to push to this one, but you will be able to pull new
