@@ -40,7 +40,7 @@ David L. Millman, Ph.D.
 
 **Office hours**
 
-TBA
+Mon 15:00 - 16:00 and Thurs 11:00 - 12:00
 
 ## Textbook
 
