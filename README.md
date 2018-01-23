@@ -38,9 +38,15 @@ Tuesdays and Thursdays 15:05 - 16:20 in Barnard Hall 108.
 
 David L. Millman, Ph.D.
 
-**Office hours**
+**Email**: david.millman@montana.edu
 
-Mon 15:00 - 16:00 and Thurs 12:00 - 13:00
+**Office hours**: Mon 15:00 - 16:00 and Thurs 12:00 - 13:00
+
+## Grader
+
+Amy Peerlinck
+
+**Email**: amy.peerlinch@student.montana.edu
 
 ## Textbook
 
