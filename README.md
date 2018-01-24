@@ -79,7 +79,6 @@ the current plan. Assignments and due dates will be updated as they're assigned 
 | 1/25     | Overview of graphics pipeline                                              | [Lab 2]()                      | [Lab 1](./labs/lab0/README.md)    | GL Chapter 1, LoGL "Hello Tri"    |
 | 1/30     |                                                                            |                                |                                   |                                   |
 
-**BELOW HERE IS VERY LIKELY TO CHANGE**
 ### February
 
 | Date     | Description                                               | Assigned                 | Due           | Recommended Reading               |
