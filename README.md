@@ -38,9 +38,15 @@ Tuesdays and Thursdays 15:05 - 16:20 in Barnard Hall 108.
 
 David L. Millman, Ph.D.
 
-**Office hours**
+**Email**: david.millman@montana.edu
 
-TBA
+**Office hours**: Mon 15:00 - 16:00 and Thurs 12:00 - 13:00
+
+## Grader
+
+Amy Peerlinck
+
+**Email**: amy.peerlinch@student.montana.edu
 
 ## Textbook
 
@@ -64,55 +70,54 @@ the current plan. Assignments and due dates will be updated as they're assigned 
 
 ### January
 
-| Date     | Description                                       | Assigned                       | Due                               | Recommended Reading               |
-|----------|---------------------------------------------------|--------------------------------|-----------------------------------|-----------------------------------|
-| 1/11     | Intro - applications of computer graphics         | [Lab 0](./labs/lab0/README.md) |                                   | FoCG Chapter 1                    |
-| 1/16     | C++ overview / git basics                         |                                |                                   |                                   |
-| 1/18     | Overview of graphics pipeline                     | [Lab 1](./labs/lab1/README.md) | [Lab 0](./labs/lab0/README.md)    |                                   |
-| 1/23     | Rasterization / Barycentric coordinates / Color   |                                |                                   |                                   |
-| 1/25     | OpenGL basics / 2D coordinate systems             | [Lab 2]()                      | [Lab 1](./labs/lab0/README.md)    |                                   |
-| 1/30     | Graphics math - vectors and matrices              |                                |                                   |                                   |
+| Date     | Description                                                                | Assigned                       | Due                               | Recommended Reading               |
+|----------|----------------------------------------------------------------------------|--------------------------------|-----------------------------------|-----------------------------------|
+| 1/11     | [Intro - applications of computer graphics](./notes/1-11.pdf)              | [Lab 0](./labs/lab0/README.md) |                                   | FoCG Chapter 1                    |
+| 1/16     | C++ overview / git basics                                                  |                                |                                   |                                   |
+| 1/18     | [Rasterization / Barycentric coordinates / Color](./notes/1-18.pdf)        | [Lab 1](./labs/lab1/README.md) | [Lab 0](./labs/lab0/README.md)    | FoCG 2.7.1, 3.3                   |
+| 1/23     | [Barycentric coordinates](./notes/1-23.pdf)                                |                                |                                   | FoCG 8.1.2                        |
+| 1/25     | Overview of graphics pipeline                                              | [Lab 2]()                      | [Lab 1](./labs/lab0/README.md)    | GL Chapter 1, LoGL "Hello Tri"    |
+| 1/30     |                                                                            |                                |                                   |                                   |
 
-**BELOW HERE IS VERY LIKELY TO CHANGE**
 ### February
 
 | Date     | Description                                               | Assigned                 | Due           | Recommended Reading               |
 |----------|-----------------------------------------------------------|--------------------------|---------------|-----------------------------------|
-| 2/1      | Orthographic projection / OpenGL primitives               |                          |               |                                   |
-| 2/6      | OpenGL / C++ Lab Overview and Program 1 Assigment         | [Lab 3](), [Program 1]() | [Lab 2]()     |                                   |
-| 2/8      | Lab day                                                   |                          |               |                                   |
-| 2/13     | Model, View, Projection Matrices                          | [Lab 4]()                | [Lab 3]()     |                                   |
-| 2/15     | Transform Matrices - Translation, Rotation and Scale      |                          |               |                                   |
-| 2/20     | Perspective Projection and the Depth Buffer               |                          |               |                                   |
-| 2/22     | Lab day                                                   |                          | [Lab 4]()     |                                   |
-| 2/27     | Virtual Trackball                                         | [Lab 5]()                | [Program 1]() |                                   |
+| 2/1      |                                                           |                          |               |                                   |
+| 2/6      |                                                           | [Lab 3](), [Program 1]() | [Lab 2]()     |                                   |
+| 2/8      |                                                           |                          |               |                                   |
+| 2/13     |                                                           | [Lab 4]()                | [Lab 3]()     |                                   |
+| 2/15     |                                                           |                          |               |                                   |
+| 2/20     |                                                           |                          |               |                                   |
+| 2/22     |                                                           |                          | [Lab 4]()     |                                   |
+| 2/27     |                                                           | [Lab 5]()                | [Program 1]() |                                   |
 
 ### March
 
 | Date     | Description                                     | Assigned     | Due           | Recommended Reading |
 |----------|-------------------------------------------------|--------------|---------------|---------------------|
-| 3/1      | Lab Day                                         |              |               |                     |
-| 3/6      | Materials and Lights                            | [Lab 6]()    | [Lab5]()      |                     |
-| 3/8      | Midterm                                         | [Program 2]()|               |                     |
-| 3/13     | Spring break - no class                         |              |               |                     |
-| 3/15     | Spring break - no class                         |              |               |                     |
-| 3/20     | Hierarchical Modeling                           |              | [Lab 6]()     |                     |
-| 3/22     | OpenGL Element Arrays / Smooth vs Flat shading  |              |               |                     |
-| 3/27     | TBA                                             | [Lab 7]()    |               |                     |
-| 3/29     | Textures / Mipmaps                              |              |               |                     |
+| 3/1      |                                                 |              |               |                     |
+| 3/6      |                                                 | [Lab 6]()    | [Lab5]()      |                     |
+| 3/8      |                                                 | [Program 2]()|               |                     |
+| 3/13     |                                                 |              |               |                     |
+| 3/15     |                                                 |              |               |                     |
+| 3/20     |                                                 |              | [Lab 6]()     |                     |
+| 3/22     |                                                 |              |               |                     |
+| 3/27     |                                                 | [Lab 7]()    |               |                     |
+| 3/29     |                                                 |              |               |                     |
 
 ### April
 
 | Date     | Description                                 | Assigned     | Due                          | Recommended Reading |
 |----------|---------------------------------------------|--------------|------------------------------|---------------------|
-| 4/3      | Animation basics                            | [Lab 8]()    | [Program 2](), [Lab 7]()     |                     |
-| 4/5      | First person camera                         | [Program 3]()|                              |                     |
-| 4/10     | Animating Orientation / Quaternions         | [Lab 9]()    | [Lab 8]()                    |                     |
-| 4/12     | Bezier Curves                               |              |                              |                     |
-| 4/17     | Blending                                    | [Lab 10]()   | [Lab 9]()                    |                     |
-| 4/19     | Particle Systems                            |              |                              |                     |
-| 4/24     | TBA                                         |              | [Lab 10]()                   |                     |
-| 4/26     | TBA                                         |              | [Program 3]()                |                     |
+| 4/3      |                                             | [Lab 8]()    | [Program 2](), [Lab 7]()     |                     |
+| 4/5      |                                             | [Program 3]()|                              |                     |
+| 4/10     |                                             | [Lab 9]()    | [Lab 8]()                    |                     |
+| 4/12     |                                             |              |                              |                     |
+| 4/17     |                                             | [Lab 10]()   | [Lab 9]()                    |                     |
+| 4/19     |                                             |              |                              |                     |
+| 4/24     |                                             |              | [Lab 10]()                   |                     |
+| 4/26     |                                             |              | [Program 3]()                |                     |
 
 ### May
 
@@ -120,6 +125,29 @@ the current plan. Assignments and due dates will be updated as they're assigned 
 |----------|---------------------------------------------|
 | 5/4      | Final - 12-1:50pm                           |
 
+
+###
+
+Potential Upcoming topics:
+- OpenGL basics / 2D coordinate systems
+- Graphics math - vectors and matrices
+- Orthographic projection
+- OpenGL
+- Model, View, Projection Matrices
+- Transform Matrices - Translation, Rotation and Scale
+- Perspective Projection and the Depth Buffer
+- Virtual Trackball
+- Materials and Lights
+- Hierarchical Modeling
+- OpenGL Element Arrays
+- Smooth vs Flat shading
+- Textures / Mipmaps
+- Animation basics
+- First person camera
+- Animating Orientation / Quaternions
+- Bezier Curves
+- Blending
+- Particle Systems
 
 ## Catalog Information
 
