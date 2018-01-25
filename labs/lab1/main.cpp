@@ -2,6 +2,7 @@
 
 #include "bitmap_image.hpp"
 
+//Barycentric Cooridinate calculation
 float f(float a[2], float b[2], float p[2]){
 	return (a[1]-b[1])*p[0] + (b[0]-a[0])*p[1] + a[0]*b[1] - b[0]*a[1];
 }
@@ -68,7 +69,7 @@ int main(int argc, char** argv) {
 	    min_y = three[1];
     }
 
-    //rgb_t color = make_colour(255, 255, 255);
+    //Main Loop
     for(int i=min_x; i<max_x; i++){
 	    for(int j=min_y; j<max_y; j++){
 		    float p[] = {(float)i,(float)j};
