@@ -87,6 +87,10 @@ Add color as an input to your fragment shader. Make sure the name of the input
 is the same as the output from the vertex shader.  Use the input color to set
 output of the fragment shader.
 
+If all is correct, you should see a triangle with interpolated colors.
+
+![Multicolor triangle](./img/colors.png)
+
 ## Things to notice
 
 ### Uneven scaling
