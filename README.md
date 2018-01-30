@@ -46,7 +46,7 @@ David L. Millman, Ph.D.
 
 Amy Peerlinck
 
-**Email**: amy.peerlinch@student.montana.edu
+**Email**: amy.peerlinck@student.montana.edu
 
 ## Textbook
 
