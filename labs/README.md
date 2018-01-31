@@ -29,8 +29,8 @@ Since you're encouraged to work in teams for the labs, you'll probably want to
 share the repository with your teammates.  You also must share your repository
 with me (and our course assistants) so that we can grade your work. In the upper
 right, there is usually an 'Invite users to this repo' box with a 'Send
-invitation' button. Click the button to add users (my username is david_millman,
-I will add our course assistants' usernames once I have them). If the 'Invite
+invitation' button. Click the button to add users (my username is
+`david_millman`, Amy's username is `amy_linck`). If the 'Invite
 users to this repo' box isn't there, you can also add users through the
 'Settings' menu on the left hand side. Click 'Settings', then 'User and Group
 access', where you can add users.
