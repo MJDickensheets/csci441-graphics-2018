@@ -42,12 +42,15 @@ David L. Millman, Ph.D.
 
 **Office hours**: Mon 15:00 - 16:00 and Thurs 12:00 - 13:00
 
+**Bitbucket username**: david_millman
+
 ## Grader
 
 Amy Peerlinck
 
 **Email**: amy.peerlinck@student.montana.edu
 
+**Bitbucket username**: amy_linck
 ## Textbook
 
 Textbooks are optional but recommended
