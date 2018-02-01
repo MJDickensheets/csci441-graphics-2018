@@ -80,13 +80,13 @@ the current plan. Assignments and due dates will be updated as they're assigned 
 | 1/18 | [Rasterization / Barycentric coordinates / Color](./notes/1-18.pdf) | [Lab 1](./labs/lab1/README.md) | [Lab 0](./labs/lab0/README.md) | FoCG 2.7.1, 3.3                |
 | 1/23 | [Barycentric coordinates](./notes/1-23.pdf)                         |                                |                                | FoCG 8.1.2                     |
 | 1/25 | Overview of graphics pipeline                                       | [Lab 2](./labs/lab2/README.md) | [Lab 1](./labs/lab0/README.md) | GL Chapter 1, LoGL "Hello Tri" |
-| 1/30 | OpenGL basics / 2D coordinate systems                               |                                |                                | GL Chapter 1, LoGL "Hello Window" & "Hello Tri" |
+| 1/30 | Vectors / Coordinates / OpenGL basics                               |                                |                                | FoCG 2, LoGL "Hello Window" & "Hello Tri" |
 
 ### February
 
 | Date     | Description                                               | Assigned                 | Due                             | Recommended Reading               |
 |----------|-----------------------------------------------------------|--------------------------|---------------------------------|-----------------------------------|
-| 2/1      |                                                           |                          |                                 |                                   |
+| 2/1      | OpenGL basics                                             |                          |                                 | LoGL "Hello Tri"                  |
 | 2/6      |                                                           | [Lab 3](), [Program 1]() | [Lab 2](./labs/lab2/README.md)  |                                   |
 | 2/8      |                                                           |                          |                                 |                                   |
 | 2/13     |                                                           | [Lab 4]()                | [Lab 3]()                       |                                   |
