@@ -42,12 +42,15 @@ David L. Millman, Ph.D.
 
 **Office hours**: Mon 15:00 - 16:00 and Thurs 12:00 - 13:00
 
+**Bitbucket username**: david_millman
+
 ## Grader
 
 Amy Peerlinck
 
-**Email**: amy.peerlinch@student.montana.edu
+**Email**: amy.peerlinck@student.montana.edu
 
+**Bitbucket username**: amy_linck
 ## Textbook
 
 Textbooks are optional but recommended
@@ -70,27 +73,27 @@ the current plan. Assignments and due dates will be updated as they're assigned 
 
 ### January
 
-| Date     | Description                                                                | Assigned                       | Due                               | Recommended Reading               |
-|----------|----------------------------------------------------------------------------|--------------------------------|-----------------------------------|-----------------------------------|
-| 1/11     | [Intro - applications of computer graphics](./notes/1-11.pdf)              | [Lab 0](./labs/lab0/README.md) |                                   | FoCG Chapter 1                    |
-| 1/16     | C++ overview / git basics                                                  |                                |                                   |                                   |
-| 1/18     | [Rasterization / Barycentric coordinates / Color](./notes/1-18.pdf)        | [Lab 1](./labs/lab1/README.md) | [Lab 0](./labs/lab0/README.md)    | FoCG 2.7.1, 3.3                   |
-| 1/23     | [Barycentric coordinates](./notes/1-23.pdf)                                |                                |                                   | FoCG 8.1.2                        |
-| 1/25     | Overview of graphics pipeline                                              | [Lab 2]()                      | [Lab 1](./labs/lab0/README.md)    | GL Chapter 1, LoGL "Hello Tri"    |
-| 1/30     |                                                                            |                                |                                   |                                   |
+| Date | Description                                                         | Assigned                       | Due                            | Recommended Reading            |
+|------|---------------------------------------------------------------------|--------------------------------|--------------------------------|--------------------------------|
+| 1/11 | [Intro - applications of computer graphics](./notes/1-11.pdf)       | [Lab 0](./labs/lab0/README.md) |                                | FoCG Chapter 1                 |
+| 1/16 | C++ overview / git basics                                           |                                |                                |                                |
+| 1/18 | [Rasterization / Barycentric coordinates / Color](./notes/1-18.pdf) | [Lab 1](./labs/lab1/README.md) | [Lab 0](./labs/lab0/README.md) | FoCG 2.7.1, 3.3                |
+| 1/23 | [Barycentric coordinates](./notes/1-23.pdf)                         |                                |                                | FoCG 8.1.2                     |
+| 1/25 | Overview of graphics pipeline                                       | [Lab 2](./labs/lab2/README.md) | [Lab 1](./labs/lab0/README.md) | GL Chapter 1, LoGL "Hello Tri" |
+| 1/30 | Vectors / Coordinates / OpenGL basics                               |                                |                                | FoCG 2, LoGL "Hello Window" & "Hello Tri" |
 
 ### February
 
-| Date     | Description                                               | Assigned                 | Due           | Recommended Reading               |
-|----------|-----------------------------------------------------------|--------------------------|---------------|-----------------------------------|
-| 2/1      |                                                           |                          |               |                                   |
-| 2/6      |                                                           | [Lab 3](), [Program 1]() | [Lab 2]()     |                                   |
-| 2/8      |                                                           |                          |               |                                   |
-| 2/13     |                                                           | [Lab 4]()                | [Lab 3]()     |                                   |
-| 2/15     |                                                           |                          |               |                                   |
-| 2/20     |                                                           |                          |               |                                   |
-| 2/22     |                                                           |                          | [Lab 4]()     |                                   |
-| 2/27     |                                                           | [Lab 5]()                | [Program 1]() |                                   |
+| Date     | Description                                               | Assigned                 | Due                             | Recommended Reading               |
+|----------|-----------------------------------------------------------|--------------------------|---------------------------------|-----------------------------------|
+| 2/1      | OpenGL basics                                             |                          |                                 | LoGL "Hello Tri"                  |
+| 2/6      |                                                           | [Lab 3](), [Program 1]() | [Lab 2](./labs/lab2/README.md)  |                                   |
+| 2/8      |                                                           |                          |                                 |                                   |
+| 2/13     |                                                           | [Lab 4]()                | [Lab 3]()                       |                                   |
+| 2/15     |                                                           |                          |                                 |                                   |
+| 2/20     |                                                           |                          |                                 |                                   |
+| 2/22     |                                                           |                          | [Lab 4]()                       |                                   |
+| 2/27     |                                                           | [Lab 5]()                | [Program 1]()                   |                                   |
 
 ### March
 
@@ -129,10 +132,8 @@ the current plan. Assignments and due dates will be updated as they're assigned 
 ###
 
 Potential Upcoming topics:
-- OpenGL basics / 2D coordinate systems
 - Graphics math - vectors and matrices
 - Orthographic projection
-- OpenGL
 - Model, View, Projection Matrices
 - Transform Matrices - Translation, Rotation and Scale
 - Perspective Projection and the Depth Buffer
