@@ -76,12 +76,14 @@ std::string readFile(const std::string& fileName) {
 
 GLuint createShader(const std::string& fileName, GLenum shaderType) {
     std::string source = readFile(fileName);
-    const char* src_ptr = source.c_str();
-
+    const GLchar* src_ptr = source.c_str();
+    
     /** YOU WILL ADD CODE STARTING HERE */
-    GLuint shader = 0;
+    GLuint shader = glCreateShader(shaderType);;
     // create the shader using
     // glCreateShader, glShaderSource, and glCompileShader
+    glShaderSource(shader, 1, &src_ptr, NULL);
+    glCompileShader(shader);
     /** END CODE HERE */
 
     // Perform some simple error handling on the shader
@@ -101,7 +103,13 @@ GLuint createShader(const std::string& fileName, GLenum shaderType) {
 GLuint createShaderProgram(GLuint vertexShader, GLuint fragmentShader) {
     /** YOU WILL ADD CODE STARTING HERE */
     // create the program using glCreateProgram, glAttachShader, glLinkProgram
-    GLuint program = 0;
+    GLuint program = glCreateProgram();
+
+    glAttachShader(program, vertexShader);
+    glAttachShader(program, fragmentShader);
+    glLinkProgram(program);
+
+
     /** END CODE HERE */
 
     // Perform some simple error handling
@@ -115,6 +123,11 @@ GLuint createShaderProgram(GLuint vertexShader, GLuint fragmentShader) {
     }
 
     return program;
+}
+
+void w2nd(float* input) {
+    input[0] = (input[0]*2/640)-1;
+    input[1] = 1 - (input[1]*2/480);
 }
 
 int main(void) {
@@ -132,32 +145,59 @@ int main(void) {
     // convert the triangle to an array of floats containing
     // normalized device coordinates and color components.
     // float triangle[] = ...
+    float coords[6];
+    float colors[9];
+    std::cout << "3 points in the format x y x y x y:";
+    std::cin >> coords[0] >> coords[1] >> coords[2] >> coords[3] >> coords[4] >> coords[5];
+    std::cout << "3 color values in the format r g b r g b r g b:";
+    std::cin >> colors[0] >> colors[1] >> colors[2] >> colors[3] >> colors[4] >> colors[5] >> colors[6] >> colors[7] >> colors[8];
+    
+    w2nd(&coords[0]);
+    w2nd(&coords[2]);
+    w2nd(&coords[4]);
 
-    /** PART2: map the data
+    for(int i = 0; i < 9; i++){
+	colors[i] = colors[i]/255;
+    }
+
+    float triangle[] = {coords[0], coords[1], colors[0], colors[1], colors[2],
+	    		coords[2], coords[3], colors[3], colors[4], colors[5],
+			coords[4], coords[5], colors[6], colors[7], colors[8]};
+    /** PART2: map the data*/
 
     // create vertex and array buffer objects using
     // glGenBuffers, glGenVertexArrays
-    GLuint VBO[1], VAO[1];
+    GLuint VBO, VAO;
 
+    glGenBuffers(1, &VBO);
+    glGenVertexArrays(1, &VAO);
+    
     // setup triangle using glBindVertexArray, glBindBuffer, GlBufferData
-
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
+    glBindVertexArray(VAO);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(triangle), triangle, GL_STATIC_DRAW);
     // setup the attribute pointer for the coordinates
     // setup the attribute pointer for the colors
     // both will use glVertexAttribPointer and glEnableVertexAttribArray;
+    glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
+    glEnableVertexAttribArray(0);
 
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(2 * sizeof(float)));
+    glEnableVertexAttribArray(1);
     /** PART3: create the shader program */
 
     // create the shaders
     // YOU WILL HAVE TO ADD CODE TO THE createShader FUNCTION ABOVE
-    GLuint vertexShader = createShader("../vert.glsl", GL_VERTEX_SHADER);
-    GLuint fragmentShader = createShader("../frag.glsl", GL_FRAGMENT_SHADER);
+    GLuint vertexShader = createShader("./vert.glsl", GL_VERTEX_SHADER);
+    GLuint fragmentShader = createShader("./frag.glsl", GL_FRAGMENT_SHADER);
 
     // create the shader program
     // YOU WILL HAVE TO ADD CODE TO THE createShaderProgram FUNCTION ABOVE
     GLuint shaderProgram = createShaderProgram(vertexShader, fragmentShader);
 
     // cleanup the vertex and fragment shaders using glDeleteShader
-
+    glDeleteShader(vertexShader);
+    glDeleteShader(fragmentShader);
     /** END INITIALIZATION CODE */
 
     while (!glfwWindowShouldClose(window)) {
@@ -170,13 +210,13 @@ int main(void) {
 
         // clear the screen with your favorite color using glClearColor
         glClear(GL_COLOR_BUFFER_BIT);
-
+	glClearColor(0,0,0,0);
         // set the shader program using glUseProgram
-
+	glUseProgram(shaderProgram);
         // bind the vertex array using glBindVertexArray
-
+	glBindVertexArray(VAO);
         // draw the triangles using glDrawArrays
-
+	glDrawArrays(GL_TRIANGLES, 0, 3);
 
         /** END RENDERING CODE */
 
