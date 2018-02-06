@@ -87,7 +87,7 @@ the current plan. Assignments and due dates will be updated as they're assigned 
 | Date     | Description                                               | Assigned                 | Due                             | Recommended Reading               |
 |----------|-----------------------------------------------------------|--------------------------|---------------------------------|-----------------------------------|
 | 2/1      | OpenGL basics                                             |                          |                                 | LoGL "Hello Tri"                  |
-| 2/6      | Translation, Rotation and Scale                           | [Lab 3]()                | [Lab 2](./labs/lab2/README.md)  | FoCG 6.1                          |
+| 2/6      | Matrices, Rotation and Scale                              | [Lab 3]()                | [Lab 2](./labs/lab2/README.md)  | FoCG 6.1                          |
 | 2/8      |                                                           | [Program 1]()            |                                 |                                   |
 | 2/13     |                                                           | [Lab 4]()                | [Lab 3]()                       |                                   |
 | 2/15     |                                                           |                          |                                 |                                   |
