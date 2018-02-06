@@ -87,8 +87,8 @@ the current plan. Assignments and due dates will be updated as they're assigned 
 | Date     | Description                                               | Assigned                 | Due                             | Recommended Reading               |
 |----------|-----------------------------------------------------------|--------------------------|---------------------------------|-----------------------------------|
 | 2/1      | OpenGL basics                                             |                          |                                 | LoGL "Hello Tri"                  |
-| 2/6      |                                                           | [Lab 3](), [Program 1]() | [Lab 2](./labs/lab2/README.md)  |                                   |
-| 2/8      |                                                           |                          |                                 |                                   |
+| 2/6      | Translation, Rotation and Scale                           | [Lab 3]()                | [Lab 2](./labs/lab2/README.md)  | FoCG 6.1                          |
+| 2/8      |                                                           | [Program 1]()            |                                 |                                   |
 | 2/13     |                                                           | [Lab 4]()                | [Lab 3]()                       |                                   |
 | 2/15     |                                                           |                          |                                 |                                   |
 | 2/20     |                                                           |                          |                                 |                                   |
@@ -132,10 +132,8 @@ the current plan. Assignments and due dates will be updated as they're assigned 
 ###
 
 Potential Upcoming topics:
-- Graphics math - vectors and matrices
 - Orthographic projection
 - Model, View, Projection Matrices
-- Transform Matrices - Translation, Rotation and Scale
 - Perspective Projection and the Depth Buffer
 - Virtual Trackball
 - Materials and Lights
