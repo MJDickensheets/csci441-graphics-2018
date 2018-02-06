@@ -13,11 +13,17 @@ linear algebra library for this lab.
 
 ## Recommended Reading
 
-* FoCG Section 6.1
+Uniform Variables
+
+* GL Chapter 2: Storage qualifiers
+* [Uniform variables](https://learnopengl.com/Getting-started/Shaders) (Uniforms section)
+
+Transformations
+
+* FoCG Section 6.1,.3
 * [Wikipdeia: Translation Matrix](https://en.wikipedia.org/wiki/Translation_%28geometry%29)
 * [Wikipedia: Scale Matrix](http://en.wikipedia.org/wiki/Scaling_%28geometry%29)
 * [Wikipedia: Rotation Matrix](https://en.wikipedia.org/wiki/Rotation_matrix)
-* [Uniform variables](https://learnopengl.com/Getting-started/Shaders) (Uniforms section)
 
 ## Part 1 - Transformation matrices
 
