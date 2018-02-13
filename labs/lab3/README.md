@@ -1,4 +1,4 @@
-# Lab 4 - Transformation Matrices
+# Lab 3 - Transformation Matrices
 
 *You may work in pairs on this assignment. To receive credit, demonstrate your
 completed program during lab or push your code up to Bitbucket prior to class on
