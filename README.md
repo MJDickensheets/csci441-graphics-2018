@@ -84,16 +84,16 @@ the current plan. Assignments and due dates will be updated as they're assigned 
 
 ### February
 
-| Date     | Description                                               | Assigned                 | Due                             | Recommended Reading               |
-|----------|-----------------------------------------------------------|--------------------------|---------------------------------|-----------------------------------|
-| 2/1      | OpenGL basics                                             |                          |                                 | LoGL "Hello Tri"                  |
-| 2/6      | Matrices, Rotation and Scale                              | [Lab 3]()                | [Lab 2](./labs/lab2/README.md)  | FoCG 6.1                          |
-| 2/8      |                                                           | [Program 1]()            |                                 |                                   |
-| 2/13     |                                                           | [Lab 4]()                | [Lab 3]()                       |                                   |
-| 2/15     |                                                           |                          |                                 |                                   |
-| 2/20     |                                                           |                          |                                 |                                   |
-| 2/22     |                                                           |                          | [Lab 4]()                       |                                   |
-| 2/27     |                                                           | [Lab 5]()                | [Program 1]()                   |                                   |
+| Date     | Description                                               | Assigned                       | Due                             | Recommended Reading               |
+|----------|-----------------------------------------------------------|--------------------------------|---------------------------------|-----------------------------------|
+| 2/1      | OpenGL basics                                             |                                |                                 | LoGL "Hello Tri"                  |
+| 2/6      | Matrices, Rotation and Scale                              | [Lab 3](./labs/lab3/README.md) | [Lab 2](./labs/lab2/README.md)  | FoCG 6.1                          |
+| 2/8      |                                                           |                                |                                 | FoCG 6.3                          |
+| 2/13     |                                                           | [Lab 4](./labs/lab4/README.md) | [Lab 3](./labs/lab3/README.md)  | FoCG 6.5, 4.2                     |
+| 2/15     |                                                           | [Program 1]()                  |                                 | FoCG 7.0-.2                       |
+| 2/20     |                                                           |                                |                                 |                                   |
+| 2/22     |                                                           |                                | [Lab 4](./labs/lab4/README.md)  |                                   |
+| 2/27     |                                                           | [Lab 5]()                      | [Program 1]()                   |                                   |
 
 ### March
 
