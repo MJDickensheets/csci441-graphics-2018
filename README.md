@@ -84,37 +84,37 @@ the current plan. Assignments and due dates will be updated as they're assigned 
 
 ### February
 
-| Date     | Description                                               | Assigned                       | Due                             | Recommended Reading               |
-|----------|-----------------------------------------------------------|--------------------------------|---------------------------------|-----------------------------------|
-| 2/1      | OpenGL basics                                             |                                |                                 | LoGL "Hello Tri"                  |
-| 2/6      | Matrices, Rotation and Scale                              | [Lab 3](./labs/lab3/README.md) | [Lab 2](./labs/lab2/README.md)  | FoCG 6.1                          |
-| 2/8      |                                                           |                                |                                 | FoCG 6.3                          |
-| 2/13     |                                                           | [Lab 4](./labs/lab4/README.md) | [Lab 3](./labs/lab3/README.md)  | FoCG 6.5, 4.2                     |
-| 2/15     |                                                           | [Program 1]()                  |                                 | FoCG 7.0-.2                       |
-| 2/20     |                                                           |                                |                                 |                                   |
-| 2/22     |                                                           |                                | [Lab 4](./labs/lab4/README.md)  |                                   |
-| 2/27     |                                                           | [Lab 5]()                      | [Program 1]()                   |                                   |
+| Date     | Description                                               | Assigned                                   | Due                             | Recommended Reading               |
+|----------|-----------------------------------------------------------|--------------------------------------------|---------------------------------|-----------------------------------|
+| 2/1      | OpenGL basics                                             |                                            |                                 | LoGL "Hello Tri"                  |
+| 2/6      | Matrices, Rotation and Scale                              | [Lab 3](./labs/lab3/README.md)             | [Lab 2](./labs/lab2/README.md)  | FoCG 6.1                          |
+| 2/8      |                                                           |                                            |                                 | FoCG 6.3                          |
+| 2/13     |                                                           | [Lab 4](./labs/lab4/README.md)             | [Lab 3](./labs/lab3/README.md)  | FoCG 6.5, 4.2                     |
+| 2/15     |                                                           |                                            |                                 | FoCG 7.0-.2                       |
+| 2/20     |                                                           | [Program 1](./programs/program1/README.md) |                                 |                                   |
+| 2/22     |                                                           |                                            | [Lab 4](./labs/lab4/README.md)  |                                   |
+| 2/27     |                                                           | [Lab 5]()                                  |                                 |                                   |
 
 ### March
 
-| Date     | Description                                     | Assigned     | Due           | Recommended Reading |
-|----------|-------------------------------------------------|--------------|---------------|---------------------|
-| 3/1      |                                                 |              |               |                     |
-| 3/6      |                                                 | [Lab 6]()    | [Lab5]()      |                     |
-| 3/8      |                                                 | [Program 2]()|               |                     |
-| 3/13     |                                                 |              |               |                     |
-| 3/15     |                                                 |              |               |                     |
-| 3/20     |                                                 |              | [Lab 6]()     |                     |
-| 3/22     |                                                 |              |               |                     |
-| 3/27     |                                                 | [Lab 7]()    |               |                     |
-| 3/29     |                                                 |              |               |                     |
+| Date     | Description                                     | Assigned     | Due                                       | Recommended Reading |
+|----------|-------------------------------------------------|--------------|-------------------------------------------|---------------------|
+| 3/1      |                                                 |              |                                           |                     |
+| 3/6      |                                                 | [Lab 6]()    | [Lab5]()                                  |                     |
+| 3/8      | Midterm                                         | [Program 2]()| [Program 1](./programs/program1/README.md)|                     |
+| 3/13     | No class (Spring Break)                         |              |                                           |                     |
+| 3/15     | No class (Spring Break)                         |              |                                           |                     |
+| 3/20     |                                                 |              | [Lab 6]()                                 |                     |
+| 3/22     |                                                 |              |                                           |                     |
+| 3/27     |                                                 | [Lab 7]()    |                                           |                     |
+| 3/29     |                                                 |              |                                           |                     |
 
 ### April
 
 | Date     | Description                                 | Assigned     | Due                          | Recommended Reading |
 |----------|---------------------------------------------|--------------|------------------------------|---------------------|
-| 4/3      |                                             | [Lab 8]()    | [Program 2](), [Lab 7]()     |                     |
-| 4/5      |                                             | [Program 3]()|                              |                     |
+| 4/3      |                                             | [Lab 8]()    | [Lab 7]()                    |                     |
+| 4/5      |                                             | [Program 3]()| [Program 2]()                |                     |
 | 4/10     |                                             | [Lab 9]()    | [Lab 8]()                    |                     |
 | 4/12     |                                             |              |                              |                     |
 | 4/17     |                                             | [Lab 10]()   | [Lab 9]()                    |                     |
