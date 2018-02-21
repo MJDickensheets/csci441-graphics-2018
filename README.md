@@ -73,25 +73,25 @@ the current plan. Assignments and due dates will be updated as they're assigned 
 
 ### January
 
-| Date | Description                                                         | Assigned                       | Due                            | Recommended Reading            |
-|------|---------------------------------------------------------------------|--------------------------------|--------------------------------|--------------------------------|
-| 1/11 | [Intro - applications of computer graphics](./notes/1-11.pdf)       | [Lab 0](./labs/lab0/README.md) |                                | FoCG Chapter 1                 |
-| 1/16 | C++ overview / git basics                                           |                                |                                |                                |
-| 1/18 | [Rasterization / Barycentric coordinates / Color](./notes/1-18.pdf) | [Lab 1](./labs/lab1/README.md) | [Lab 0](./labs/lab0/README.md) | FoCG 2.7.1, 3.3                |
-| 1/23 | [Barycentric coordinates](./notes/1-23.pdf)                         |                                |                                | FoCG 8.1.2                     |
-| 1/25 | Overview of graphics pipeline                                       | [Lab 2](./labs/lab2/README.md) | [Lab 1](./labs/lab0/README.md) | GL Chapter 1, LoGL "Hello Tri" |
-| 1/30 | Vectors / Coordinates / OpenGL basics                               |                                |                                | FoCG 2, LoGL "Hello Window" & "Hello Tri" |
+| Date | Description                                                         | Assigned                       | Due                            | Recommended Reading                        |
+|------|---------------------------------------------------------------------|--------------------------------|--------------------------------|--------------------------------------------|
+| 1/11 | [Intro - applications of computer graphics](./notes/01-11.pdf)       | [Lab 0](./labs/lab0/README.md) |                                | FoCG Chapter 1                             |
+| 1/16 | C++ overview / git basics                                           |                                |                                |                                            |
+| 1/18 | [Rasterization / Barycentric coordinates / Color](./notes/01-18.pdf) | [Lab 1](./labs/lab1/README.md) | [Lab 0](./labs/lab0/README.md) | FoCG 2.7.1, 3.3                            |
+| 1/23 | [Barycentric coordinates](./notes/01-23.pdf)                         |                                |                                | FoCG 8.1.2                                 |
+| 1/25 | [Overview of graphics pipeline](./notes/01-25.pdf)                  | [Lab 2](./labs/lab2/README.md) | [Lab 1](./labs/lab0/README.md) | GL Chapter 1, LoGL "Hello Tri"             |
+| 1/30 | [Vectors / Coordinates / OpenGL basics](./notes/01-30.pdf)          |                                |                                | FoCG 2, LoGL "Hello Window" & "Hello Tri"  |
 
 ### February
 
 | Date     | Description                                               | Assigned                                   | Due                             | Recommended Reading               |
 |----------|-----------------------------------------------------------|--------------------------------------------|---------------------------------|-----------------------------------|
-| 2/1      | OpenGL basics                                             |                                            |                                 | LoGL "Hello Tri"                  |
-| 2/6      | Matrices, Rotation and Scale                              | [Lab 3](./labs/lab3/README.md)             | [Lab 2](./labs/lab2/README.md)  | FoCG 6.1                          |
-| 2/8      |                                                           |                                            |                                 | FoCG 6.3                          |
-| 2/13     |                                                           | [Lab 4](./labs/lab4/README.md)             | [Lab 3](./labs/lab3/README.md)  | FoCG 6.5, 4.2                     |
-| 2/15     |                                                           |                                            |                                 | FoCG 7.0-.2                       |
-| 2/20     |                                                           | [Program 1](./programs/program1/README.md) |                                 |                                   |
+| 2/1      | [OpenGL basics](./notes/02-01.pdf)                        |                                            |                                 | LoGL "Hello Tri"                  |
+| 2/6      | [Matrices, Rotation and Scale](./notes/02-06.pdf)         | [Lab 3](./labs/lab3/README.md)             | [Lab 2](./labs/lab2/README.md)  | FoCG 6.1                          |
+| 2/8      | [Affine Transformations](./notes/02-08.pdf)               |                                            |                                 | FoCG 6.3                          |
+| 2/13     | [Coordinate Transformations](./notes/02-13.pdf)           | [Lab 4](./labs/lab4/README.md)             | [Lab 3](./labs/lab3/README.md)  | FoCG 6.5, 4.2                     |
+| 2/15     | [Projections](./notes/02-15.pdf)                          |                                            |                                 | FoCG 7.0-.1                       |
+| 2/20     | [Projections, Camera](./notes/02-20.pdf)                  | [Program 1](./programs/program1/README.md) |                                 | FoCG 7.1-7.2                      |
 | 2/22     |                                                           |                                            | [Lab 4](./labs/lab4/README.md)  |                                   |
 | 2/27     |                                                           | [Lab 5]()                                  |                                 |                                   |
 
@@ -132,9 +132,7 @@ the current plan. Assignments and due dates will be updated as they're assigned 
 ###
 
 Potential Upcoming topics:
-- Orthographic projection
-- Model, View, Projection Matrices
-- Perspective Projection and the Depth Buffer
+- The Depth Buffer
 - Virtual Trackball
 - Materials and Lights
 - Hierarchical Modeling
