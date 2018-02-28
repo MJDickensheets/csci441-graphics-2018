@@ -93,14 +93,14 @@ the current plan. Assignments and due dates will be updated as they're assigned 
 | 2/15     | [Projections](./notes/02-15.pdf)                          |                                            |                                 | FoCG 7.0-.1                       |
 | 2/20     | [Projections, Camera](./notes/02-20.pdf)                  | [Program 1](./programs/program1/README.md) |                                 | FoCG 7.1-7.2                      |
 | 2/22     |                                                           |                                            | [Lab 4](./labs/lab4/README.md)  |                                   |
-| 2/27     |                                                           | [Lab 5]()                                  |                                 |                                   |
+| 2/27     |                                                           | [Lab 5](./labs/lab5/README.md)             |                                 |                                   |
 
 ### March
 
 | Date     | Description                                     | Assigned     | Due                                       | Recommended Reading |
 |----------|-------------------------------------------------|--------------|-------------------------------------------|---------------------|
 | 3/1      |                                                 |              |                                           |                     |
-| 3/6      |                                                 | [Lab 6]()    | [Lab5]()                                  |                     |
+| 3/6      |                                                 | [Lab 6]()    | [Lab5](./labs/lab5/README.md)             |                     |
 | 3/8      | Midterm                                         | [Program 2]()| [Program 1](./programs/program1/README.md)|                     |
 | 3/13     | No class (Spring Break)                         |              |                                           |                     |
 | 3/15     | No class (Spring Break)                         |              |                                           |                     |
