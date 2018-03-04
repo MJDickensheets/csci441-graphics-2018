@@ -101,7 +101,8 @@ the current plan. Assignments and due dates will be updated as they're assigned 
 |----------|-------------------------------------------------|--------------|-------------------------------------------|---------------------|
 | 3/1      |                                                 |              |                                           |                     |
 | 3/6      |                                                 | [Lab 6]()    | [Lab5](./labs/lab5/README.md)             |                     |
-| 3/8      | Midterm                                         | [Program 2]()| [Program 1](./programs/program1/README.md)|                     |
+| 3/8      | Midterm                                         | [Program 2]()|                                           |                     |
+| 3/9      | No class (due date, any where on earth)         |              | [Program 1](./programs/program1/README.md)|                     |
 | 3/13     | No class (Spring Break)                         |              |                                           |                     |
 | 3/15     | No class (Spring Break)                         |              |                                           |                     |
 | 3/20     |                                                 |              | [Lab 6]()                                 |                     |
