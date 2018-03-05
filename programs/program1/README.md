@@ -2,7 +2,7 @@
 
 *You must work individually on this assignment. To receive credit, push all
 required materials to your own private fork of this repository by the due date
-(see the [syllabus](https://bitbucket.org/msucsc441spring2016/syllabus) for an
+(see the [syllabus](https://bitbucket.org/msu-cs/csci441-spring2018) for an
 up-to-date schedule of assignments and due dates).*
 
 ## Summary
