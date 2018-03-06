@@ -61,6 +61,7 @@ void processInput(Matrix& model, GLFWwindow *window) {
     if (isPressed(window, GLFW_KEY_ESCAPE) || isPressed(window, GLFW_KEY_Q)) {
         glfwSetWindowShouldClose(window, true);
     }
+   
     model = processModel(model, window);
 }
 
@@ -69,6 +70,9 @@ void errorCallback(int error, const char* description) {
 }
 
 int main(void) {
+    
+    
+	
     GLFWwindow* window;
 
     glfwSetErrorCallback(errorCallback);
@@ -103,11 +107,13 @@ int main(void) {
 
 
     // create c
-    // Cylinder c(20, 1, .2, .4);
-    // Cone c(20, 1, .2, .4);
-    // Sphere c(20, .5, 1, .2, .4);
-    // Torus c(20, .75, .25, 1, .2, .4);
-    DiscoCube c;
+    Cylinder c(60, 1, .2, .4);
+    
+    /*************************/
+    /* UNCOMMENT FOR SHAPE 2 */
+    /*************************/
+    //DiscoCube c;
+    
 
     // copy vertex data
     GLuint VBO1;
@@ -116,16 +122,23 @@ int main(void) {
     glBufferData(GL_ARRAY_BUFFER, c.coords.size()*sizeof(float),
             &c.coords[0], GL_STATIC_DRAW);
 
+     
     // describe vertex layout
     GLuint VAO1;
     glGenVertexArrays(1, &VAO1);
     glBindVertexArray(VAO1);
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6*sizeof(float),
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 9*sizeof(float),
             (void*)0);
     glEnableVertexAttribArray(0);
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6*sizeof(float),
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 9*sizeof(float),
             (void*)(3*sizeof(float)));
     glEnableVertexAttribArray(1);
+    glVertexAttribPointer(2, 3, GL_FLOAT, GL_FALSE, 9*sizeof(float),
+            (void*)(6*sizeof(float)));
+    glEnableVertexAttribArray(2);
+    
+
+
 
     // setup projection
     Matrix projection;
@@ -146,30 +159,58 @@ int main(void) {
     shader.use();
 
     // set the matrices
+
     Matrix model;
+    Matrix inv;
+
+    // set the light position
+    
+    float light[] = {1.0, 0.0, -1.0};
+    int light_loc = glGetUniformLocation(shader.id(), "light");
+    float shiny = 64.0;
+    int shiny_loc = glGetUniformLocation(shader.id(), "shiny");
+
+    // set eye location
+    float viewPos[] = {eye.x(), eye.y(), eye.z()};
+    int viewPos_loc = glGetUniformLocation(shader.id(), "viewPos");
 
     // and use z-buffering
     glEnable(GL_DEPTH_TEST);
+    
 
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window)) {
         // process input
         processInput(model, window);
+	
+	if(isPressed(window, GLFW_KEY_J)){shiny += 1;}
+        else if(isPressed(window, GLFW_KEY_K)){shiny -= 1;}
 
-        /* Render here */
+
+	/* Render here */
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
+	//Add light animation
+	float timeValue = glfwGetTime();
+	light[0] = std::sin(timeValue) * 1.0;
+	light[2] = std::cos(timeValue) * 1.0;
+
         // activate shader
         shader.use();
-
+	inv.inv_trans(model.prep_inv_trans());
         Uniform::set(shader.id(), "model", model);
         Uniform::set(shader.id(), "projection", projection);
         Uniform::set(shader.id(), "camera", camera);
-
+	Uniform::set(shader.id(), "inv", inv);
+	glUniform3fv(light_loc, 1, light);
+	glUniform3fv(viewPos_loc, 1, viewPos);
+	glUniform1f(shiny_loc, shiny);
         // render the cube
         glBindVertexArray(VAO1);
         glDrawArrays(GL_TRIANGLES, 0, c.coords.size()*sizeof(float));
+	
+	
 
         /* Swap front and back and poll for io events */
         glfwSwapBuffers(window);

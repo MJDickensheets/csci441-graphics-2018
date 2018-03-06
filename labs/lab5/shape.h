@@ -4,15 +4,20 @@
 #include <cstdlib>
 #include <vector>
 
+#include <csci441/vector.h>
 
-template <typename T, typename N, typename C>
+template <typename T, typename N, typename Q, typename C>
 void add_vertex(T& coords, const N& x, const N& y, const N& z,
+	const Q& nx, const Q& ny, const Q& nz,
         const C& r, const C& g, const C& b, bool with_noise=false) {
     // adding color noise makes it easier to see before shading is implemented
     float noise = 1-with_noise*(rand()%150)/100.;
     coords.push_back(x);
     coords.push_back(y);
     coords.push_back(z);
+    coords.push_back(nx);
+    coords.push_back(ny);
+    coords.push_back(nz);
     coords.push_back(r*noise);
     coords.push_back(g*noise);
     coords.push_back(b*noise);
@@ -22,47 +27,47 @@ class DiscoCube {
 public:
     std::vector<float> coords;
     DiscoCube() : coords{
-        -0.5f, -0.5f, -0.5f,  0.0f, 1.0f, 1.0f,
-         0.5f, -0.5f, -0.5f,  0.0f, 1.0f, 1.0f,
-         0.5f,  0.5f, -0.5f,  0.0f, 1.0f, 1.0f,
-         0.5f,  0.5f, -0.5f,  0.0f, 1.0f, 1.0f,
-        -0.5f,  0.5f, -0.5f,  0.0f, 1.0f, 1.0f,
-        -0.5f, -0.5f, -0.5f,  0.0f, 1.0f, 1.0f,
+        -0.5f, -0.5f, -0.5f,  0.0f, 0.0f, -1.0f,  0.0f, 1.0f, 1.0f,
+         0.5f, -0.5f, -0.5f,  0.0f, 0.0f, -1.0f,  0.0f, 1.0f, 1.0f,
+         0.5f,  0.5f, -0.5f,  0.0f, 0.0f, -1.0f,  0.0f, 1.0f, 1.0f,
+         0.5f,  0.5f, -0.5f,  0.0f, 0.0f, -1.0f,  0.0f, 1.0f, 1.0f,
+        -0.5f,  0.5f, -0.5f,  0.0f, 0.0f, -1.0f,  0.0f, 1.0f, 1.0f,
+        -0.5f, -0.5f, -0.5f,  0.0f, 0.0f, -1.0f,  0.0f, 1.0f, 1.0f,
 
-        -0.5f, -0.5f,  0.5f,  0.0f, 0.0f, 1.0f,
-         0.5f, -0.5f,  0.5f,  0.0f, 0.0f, 1.0f,
-         0.5f,  0.5f,  0.5f,  0.0f, 0.0f, 1.0f,
-         0.5f,  0.5f,  0.5f,  0.0f, 0.0f, 1.0f,
-        -0.5f,  0.5f,  0.5f,  0.0f, 0.0f, 1.0f,
-        -0.5f, -0.5f,  0.5f,  0.0f, 0.0f, 1.0f,
+        -0.5f, -0.5f,  0.5f,   0.0f, 0.0f, 1.0f,  0.0f, 0.0f, 1.0f,
+         0.5f, -0.5f,  0.5f,   0.0f, 0.0f, 1.0f,  0.0f, 0.0f, 1.0f,
+         0.5f,  0.5f,  0.5f,   0.0f, 0.0f, 1.0f,  0.0f, 0.0f, 1.0f,
+         0.5f,  0.5f,  0.5f,   0.0f, 0.0f, 1.0f,  0.0f, 0.0f, 1.0f,
+        -0.5f,  0.5f,  0.5f,   0.0f, 0.0f, 1.0f,  0.0f, 0.0f, 1.0f,
+        -0.5f, -0.5f,  0.5f,   0.0f, 0.0f, 1.0f,  0.0f, 0.0f, 1.0f,
 
-        -0.5f,  0.5f,  0.5f,  1.0f, 1.0f, 0.0f,
-        -0.5f,  0.5f, -0.5f,  1.0f, 1.0f, 0.0f,
-        -0.5f, -0.5f, -0.5f,  1.0f, 1.0f, 0.0f,
-        -0.5f, -0.5f, -0.5f,  1.0f, 1.0f, 0.0f,
-        -0.5f, -0.5f,  0.5f,  1.0f, 1.0f, 0.0f,
-        -0.5f,  0.5f,  0.5f,  1.0f, 1.0f, 0.0f,
+        -0.5f,  0.5f,  0.5f,  -1.0f, 0.0f, 0.0f, 1.0f, 1.0f, 0.0f,
+        -0.5f,  0.5f, -0.5f,  -1.0f, 0.0f, 0.0f, 1.0f, 1.0f, 0.0f,
+        -0.5f, -0.5f, -0.5f,  -1.0f, 0.0f, 0.0f,  1.0f, 1.0f, 0.0f,
+        -0.5f, -0.5f, -0.5f,  -1.0f, 0.0f, 0.0f,  1.0f, 1.0f, 0.0f,
+        -0.5f, -0.5f,  0.5f,  -1.0f, 0.0f, 0.0f,  1.0f, 1.0f, 0.0f,
+        -0.5f,  0.5f,  0.5f,  -1.0f, 0.0f, 0.0f,  1.0f, 1.0f, 0.0f,
 
-         0.5f,  0.5f,  0.5f,  1.0f, 0.0f, 0.0f,
-         0.5f,  0.5f, -0.5f,  1.0f, 0.0f, 0.0f,
-         0.5f, -0.5f, -0.5f,  1.0f, 0.0f, 0.0f,
-         0.5f, -0.5f, -0.5f,  1.0f, 0.0f, 0.0f,
-         0.5f, -0.5f,  0.5f,  1.0f, 0.0f, 0.0f,
-         0.5f,  0.5f,  0.5f,  1.0f, 0.0f, 0.0f,
+         0.5f,  0.5f,  0.5f,  1.0f, 0.0f, 0.0f,  1.0f, 0.0f, 0.0f,
+         0.5f,  0.5f, -0.5f,  1.0f, 0.0f, 0.0f,  1.0f, 0.0f, 0.0f,
+         0.5f, -0.5f, -0.5f,  1.0f, 0.0f, 0.0f,  1.0f, 0.0f, 0.0f,
+         0.5f, -0.5f, -0.5f,  1.0f, 0.0f, 0.0f,  1.0f, 0.0f, 0.0f,
+         0.5f, -0.5f,  0.5f,  1.0f, 0.0f, 0.0f,  1.0f, 0.0f, 0.0f,
+         0.5f,  0.5f,  0.5f,  1.0f, 0.0f, 0.0f,  1.0f, 0.0f, 0.0f,
 
-        -0.5f, -0.5f, -0.5f,  0.0f, 1.0f, 0.0f,
-         0.5f, -0.5f, -0.5f,  0.0f, 1.0f, 0.0f,
-         0.5f, -0.5f,  0.5f,  0.0f, 1.0f, 0.0f,
-         0.5f, -0.5f,  0.5f,  0.0f, 1.0f, 0.0f,
-        -0.5f, -0.5f,  0.5f,  0.0f, 1.0f, 0.0f,
-        -0.5f, -0.5f, -0.5f,  0.0f, 1.0f, 0.0f,
+        -0.5f, -0.5f, -0.5f,  0.0f, -1.0f, 0.0f,  0.0f, 1.0f, 0.0f,
+         0.5f, -0.5f, -0.5f,  0.0f, -1.0f, 0.0f,  0.0f, 1.0f, 0.0f,
+         0.5f, -0.5f,  0.5f,  0.0f, -1.0f, 0.0f,  0.0f, 1.0f, 0.0f,
+         0.5f, -0.5f,  0.5f,  0.0f, -1.0f, 0.0f,  0.0f, 1.0f, 0.0f,
+        -0.5f, -0.5f,  0.5f,  0.0f, -1.0f, 0.0f,  0.0f, 1.0f, 0.0f,
+        -0.5f, -0.5f, -0.5f,  0.0f, -1.0f, 0.0f,  0.0f, 1.0f, 0.0f,
 
-        -0.5f,  0.5f, -0.5f,  1.0f, 1.0f, 0.0f,
-         0.5f,  0.5f, -0.5f,  0.0f, 1.0f, 0.0f,
-         0.5f,  0.5f,  0.5f,  0.0f, 1.0f, 1.0f,
-         0.5f,  0.5f,  0.5f,  0.0f, 1.0f, 1.0f,
-        -0.5f,  0.5f,  0.5f,  0.0f, 1.0f, 0.0f,
-        -0.5f,  0.5f, -0.5f,  1.0f, 1.0f, 0.0f
+        -0.5f,  0.5f, -0.5f,  0.0f, 1.0f, 0.0f,  1.0f, 1.0f, 0.0f,
+         0.5f,  0.5f, -0.5f,  0.0f, 1.0f, 0.0f,  0.0f, 1.0f, 0.0f,
+         0.5f,  0.5f,  0.5f,  0.0f, 1.0f, 0.0f,  0.0f, 1.0f, 1.0f,
+         0.5f,  0.5f,  0.5f,  0.0f, 1.0f, 0.0f,  0.0f, 1.0f, 1.0f,
+        -0.5f,  0.5f,  0.5f,  0.0f, 1.0f, 0.0f,  0.0f, 1.0f, 0.0f,
+        -0.5f,  0.5f, -0.5f,  0.0f, 1.0f, 0.0f,  1.0f, 1.0f, 0.0f
     } {}
 
 };
@@ -89,29 +94,42 @@ public:
             double vip1_y = radius*sin(theta_ip1);
 
             // add triangle viL, viH, vip1L
-            add_vertex(coords, vi_x, vi_y, -h, r, g, b);
-            add_vertex(coords, vi_x, vi_y, h, r, g, b);
-            add_vertex(coords, vip1_x, vip1_y, -h, r, g, b);
+	    Vector one(vi_x, vi_y, -h);
+	    Vector two(vi_x, vi_y, h);
+	    Vector three(vip1_x, vip1_y, -h);
+	    Vector norm1 = (three - two).cross((two - one)).normalized();
+	    Vector norm2 = (one - two).cross((three - two)).normalized();
+	    Vector norm3 = (two - three).cross((one - three)).normalized();
+            add_vertex(coords, vi_x, vi_y, -h, norm1.x(), norm1.y(), norm1.z(), r, g, b);
+            add_vertex(coords, vi_x, vi_y, h, norm2.x(), norm2.y(), norm2.z(), r, g, b);
+            add_vertex(coords, vip1_x, vip1_y, -h, norm3.x(), norm3.y(), norm3.z(), r, g, b);
 
             // add triangle vip1L, viH, vip1H
-            add_vertex(coords, vip1_x, vip1_y, -h, r, g, b);
-            add_vertex(coords, vi_x, vi_y, h, r, g, b);
-            add_vertex(coords, vip1_x, vip1_y, h, r, g, b);
+	    Vector four(vip1_x, vip1_y, -h);
+	    Vector five(vi_x, vi_y, h);
+	    Vector six(vip1_x, vip1_y, h);
+	    Vector norm4 = (six - four).cross((five - four)).normalized();
+	    Vector norm5 = (four - five).cross((six - five)).normalized();
+	    Vector norm6 = (five - six).cross((four - six)).normalized();
+            add_vertex(coords, vip1_x, vip1_y, -h, norm4.x(), norm4.y(), norm4.z(), r, g, b);
+            add_vertex(coords, vi_x, vi_y, h, norm5.x(), norm5.y(), norm5.z(), r, g, b);
+            add_vertex(coords, vip1_x, vip1_y, h, norm6.x(), norm6.y(), norm6.z(), r, g, b);
 
             // add high triangle vi, vip1, 0
-            add_vertex(coords, vip1_x, vip1_y, h, r, g, b);
-            add_vertex(coords, vi_x, vi_y, h, r, g, b);
-            add_vertex(coords, c_x, c_y, h, r, g, b);
+            add_vertex(coords, vip1_x, vip1_y, h, 0.0f, 0.0f, 1.0f, r, g, b);
+            add_vertex(coords, vi_x, vi_y, h, 0.0f, 0.0f, 1.0f, r, g, b);
+            add_vertex(coords, c_x, c_y, h, 0.0f, 0.0f, 1.0f, r, g, b);
 
             // // add low triangle vi, vip1, 0
-            add_vertex(coords, vip1_x, vip1_y, -h, r, g, b);
-            add_vertex(coords, c_x, c_y, -h, r, g, b);
-            add_vertex(coords, vi_x, vi_y, -h, r, g, b);
+            add_vertex(coords, vip1_x, vip1_y, -h, 0.0f, 0.0f, -1.0f, r, g, b);
+            add_vertex(coords, c_x, c_y, -h, 0.0f, 0.0f, -1.0f, r, g, b);
+            add_vertex(coords, vi_x, vi_y, -h, 0.0f, 0.0f, -1.0f, r, g, b);
         }
+	std::cout << coords[6];
     }
 };
 
-
+/*
 class Cone {
 public:
     std::vector<float> coords;
@@ -146,7 +164,8 @@ public:
         }
     }
 };
-
+*/
+/*
 class Sphere {
     double x(float r, float phi, float theta){
         return r*cos(theta)*sin(phi);
@@ -271,5 +290,5 @@ public:
     }
 
 };
-
+*/
 #endif

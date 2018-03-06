@@ -2,6 +2,7 @@
 #define _CSCI441_MATRIX_H_
 
 #include <sstream>
+#include <cstdlib>
 
 #include "vector.h"
 
@@ -121,6 +122,35 @@ public:
 
         values[idx(3,2)] = -1;
         values[idx(3,3)] = 0;
+    }
+    
+    float* prep_inv_trans() const{
+        float* ret = (float*) malloc (sizeof(float) * 9);
+        ret[0] = values[idx(2,2)] * values[idx(3,3)] - values[idx(2,3)] * values[idx(3,2)];
+        ret[1] = values[idx(2,3)] * values[idx(3,1)] - values[idx(2,1)] * values[idx(3,3)];
+        ret[2] = values[idx(2,1)] * values[idx(3,2)] - values[idx(2,2)] * values[idx(3,1)];
+        ret[3] = values[idx(1,3)] * values[idx(3,2)] - values[idx(1,2)] * values[idx(3,3)];
+        ret[4] = values[idx(1,1)] * values[idx(3,3)] - values[idx(1,3)] * values[idx(3,1)];
+        ret[5] = values[idx(1,2)] * values[idx(3,1)] - values[idx(1,1)] * values[idx(3,2)];
+        ret[6] = values[idx(1,2)] * values[idx(2,3)] - values[idx(1,3)] * values[idx(2,2)];
+        ret[7] = values[idx(1,3)] * values[idx(2,1)] - values[idx(1,1)] * values[idx(2,3)];
+        ret[8] = values[idx(1,1)] * values[idx(2,2)] - values[idx(1,2)] * values[idx(2,1)];
+        
+        return ret;
+    }
+    
+    void inv_trans(float* m) {
+        set_to_identity();
+        values[idx(0,0)] = m[0];
+        values[idx(0,1)] = m[1];
+        values[idx(0,2)] = m[2];
+        values[idx(1,0)] = m[3];
+        values[idx(1,1)] = m[4];
+        values[idx(1,2)] = m[5];
+        values[idx(2,0)] = m[6];
+        values[idx(2,1)] = m[7];
+        values[idx(2,2)] = m[8];
+        free(m);
     }
 
     Matrix operator*(const Matrix& m) const {
