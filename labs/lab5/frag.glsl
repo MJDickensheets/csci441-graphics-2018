@@ -14,11 +14,13 @@ uniform float shiny;
 
 vec3 lightColor = vec3(1.0, 1.0, 1.0);
 
+vec3 worldLight = vec3(model * vec4(light, 1.0));
+
 float ambientStrength = 0.1;
 vec3 ambient = ambientStrength * lightColor;
 
 vec3 norm = normalize(Normal);
-vec3 lightDir = normalize(light - FragPos);
+vec3 lightDir = normalize(worldLight - FragPos);
 
 float diff = max(dot(norm, lightDir), 0.0);
 vec3 diffuse = diff * lightColor;
