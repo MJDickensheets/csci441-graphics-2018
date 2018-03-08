@@ -102,7 +102,7 @@ the current plan. Assignments and due dates will be updated as they're assigned 
 | 3/1      | Standard Template Library/Phong Shading         |              |                                                   | FoCG 10.2, [Geeks for Geeks STL Notes](https://www.geeksforgeeks.org/the-c-standard-template-library-stl/)|
 | 3/6      |                                                 |              | [Lab5](./labs/lab5/README.md)(anywhere on earth)  |                     |
 | 3/8      | Midterm                                         | [Program 2]()|                                                   |                     |
-| 3/9      | No class (due date, any where on earth)         |              | [Program 1](./programs/program1/README.md)        |                     |
+| 3/11     | No class (due date, any where on earth)         |              | [Program 1](./programs/program1/README.md)        |                     |
 | 3/13     | No class (Spring Break)                         |              |                                                   |                     |
 | 3/15     | No class (Spring Break)                         |              |                                                   |                     |
 | 3/20     |                                                 | [Lab 6]()    |                                                   |                     |
