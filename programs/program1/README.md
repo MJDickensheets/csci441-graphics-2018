@@ -1,109 +1,46 @@
-# 2D Shape Modeler
+# "Simple Modeler"
+## Program 1
+## Computer Graphics
+## CSCI 441, Spring 2018
 
-*You must work individually on this assignment. To receive credit, push all
-required materials to your own private fork of this repository by the due date
-(see the [syllabus](https://bitbucket.org/msu-cs/csci441-spring2018) for an
-up-to-date schedule of assignments and due dates).*
+# Due Date: March 12, 2018 at 5:59 AM
 
-## Summary
+Table of Contents
+=================
 
-Over the first few labs, we saw how to draw (and move) triangles and squares,
-but the world is much interesting than these simple shapes.  We could make our
-shapes by hand, but in general, it is easier to use programs to create more
-interesting shapes (often called a modeler).
+  * [Instructions]
+    * [Modes]
+      * [View]
+      * [Edit]
+        * [Stamp]
+        * [User Defined Primitive]
+        * [Group]
+        * [Modify]
+  * [Write-Up]
 
-In this program, we will build a very simple 2D shape modeler.
-The program will have two modes, view and edit.
+# Instructions
+All of the commands in this program are either performed through the command line or through direct interaction with the screen. Information and prompts appear on the command line.
 
-In view mode, the user may use the mouse to move around the viewport into the
-world and the `-` and `=` keys to increase or decrease the viewport size (which
-will scale down or up the size of what the user sees).
+# Modes
+There are two modes, view and edit. By clicking on the display window and pressing the 'v' button, you can toggle between modes. The program starts in view mode.
 
-In edit mode, the user can be in one of three sub-modes:
+# View
+In the view mode, you can move around the viewport by clicking and dragging the screen. You can also zoom in or out using the '=' or '-' buttons, respectively.
 
-1. In stamp sub-mode, the user creates objects from primitives.  First, they
-   select a primitive from the set of triangle, square, or circle. Second, they
-   determine the position of the primitive. Third, they determine the scale of
-   the primitive (perhaps giving a different scale to *x* and *y*). Fourth
-   determine the rotation of the primitive.  After the fourth step, the
-   primitive becomes a shape, which is useful in the other modes.
-2. In user defined primitive mode, the user creates a primitive by specifying a
-   collection of points.  After creating the primitive, the user can perform all
-   the same actions as on a primitive in (1) and the primitive becomes a shape.
-3. In group mode, the user can either group or ungroup a collection of shapes.
-   When grouping, the user can select a collection of shapes and group shapes
-   together to form a more complex shape.  That is, grouping the shapes produces
-   the union of the collection of shapes.  When ungrouping, the shape is
-   separated into the collection of shapes that created it. Grouping and
-   ungrouping should be supported multiple times (that is, you can group a shape
-   that itself is a group of shapes. You will need to decide how to handle
-   ungrouping a shape that is not formed by grouping a collection of shapes.
-4. In modify mode, the user can translate, scale, a rotate a shape. The
-   user must be able to specify the origin of the transformation.  Also, the
-   user must be able to update the shapes color.
+# Edit
+In the edit mode, you can access submodes to add shapes, group shapes and modify shapes.
 
-## Required Materials
+# Stamp
+The stamp submode has several options for adding primitive shapes. First click on the window and press "t" to add a triangle, "s" to add a square, or "c" to add a circle. You will then be prompted at the command line to enter an rgb value in the range 0-1. You will then select the location for the shape by clicking the desired location on the display window. Afterwards you will be prompted to give values for scale and rotation.
 
-Your program1 directory must include:
+# User Defined Primitive
+To create a user defined primitive, click the window and press "u". The user defined primitive mode is much like the stamp mode in terms of operation. However, after choosing the location for the primitive, you will be prompted to click the screen several times to add the vertices for the primitive. **The edges for your primitive must be centered around the center of the screen (point 0,0) for the primitive to render properly!** Afterwards you will see the same prompt for scale and rotation values.
 
-* All source code for the completed program
-* A screenshot of your program displaying a shape (or collection of shapes) that
-  you created using your software.
-* A README.md file with any necessary instructions for using your program
+# Group
+The group mode is accessed by clicking the window and pressing "g". You will then see a list of possible shapes to group on the command line. Type the shape name **exactly** and press enter to add it to the group. When you have finished, type "end" and press enter. If there is already a group, you will be asked whether or not you would like to ungroup it. Type 'y' to ungroup, or 'n' to cancel.
 
-## Detailed Requirements
+# Modify
+The modify function is accessed by clicking the window and pressing "m". If a group exists, you can modify the whole group by typing "y" when prompted. Otherwise you will be able to modify a single shape by typing the shape name in the displayed list. At this point you will be able to specify the origin of transformation by clicking the desired point in the display window. Next, you can select the type of modification you would like by typing in the command line 's' for scale, 'r' for rotate, 't' for translate and 'c' for color change. Each option will prompt you for input, similar to the input when creating primitives.
 
-*Your program must*
-
-*Be an original program written by you.* You may use code from labs as a
-starting point. You may talk with other students about the program, but looking
-at their code is not allowed.
-
-*Respond to mouse click and drag events.* How and where you use mouse input is
-up to you.  You do not need to use mouse input only, but it must be used
-somewhere.
-
-*Be able to support different primitives.* At a minimum, you must be able to
-support the primitives triangles, squares, and circles. You are encouraged to
-include other shapes as well. Responding to keyboard events is probably the
-easiest way to allow the user to change what shape is drawn (pressing 's' to
-start drawing squares or 'c' to start drawing circles, for example, or cycling
-through different available shapes by pressing 's'). It is up to you to decide
-how the user is able to change the shape, but be sure to document how it is done
-in your README file.
-
-*Be able to perform linear transforms on the shapes.* Transformations to the
-current shape can't affect any shapes that have already been drawn.  Be sure to
-document how the user is able to transform the shapes in your README file.
-
-*Be able to assign colors to the shapes.* At a minimum, your program must be
-able to change the color of an entire shape.  You are encouraged to add
-additional functionality to allow for changing the color of portions of a shape.
-Be sure to document any extra color features you implement in your README file.
-
-*Allow resizing of the window.* When the window is resized the shapes must
-maintain the correct aspect ratio (no non-uniform scaling). You can decide what
-coordinate space you want to store your shapes in, but you must use an
-orthographic projection matrix to ensure proper scaling.
-
-*Include a README.md file.* The README file must include any special
-instructions on how to use your program. It must also include a writeup (about a
-paragraph or two long) about the shape you created. Why did you create it? What
-about it is interesting? What do you like about it?  You are encouraged to crate
-a shape that is meaningful enough that you may want to use it as a test object
-in future labs, which will help when answering the questions above.
-
-## Point breakdown
-
-| Points | Description |
-|--------|-------------|
-| 20     | View behavior
-| 10     | Stamp mode behavior
-| 10     | User defined primitive mode behavior
-| 10     | Transformations in Stamp mode and User Defined Primitive Mode
-| 10     | Group mode
-| 10     | Transformations in modify mode
-| 10     | Color changing in modify mode
-| 20     | General (code style, execution, creativity, self expression and README.md) |
-| *100*  | *Total points* |
-
+# Writeup
+The image I created showcases the different possibilities of the program that I created. Each of the primitives as well as a user created shape are displayed. The center piece, the yin yang, is a more complex shape composed of several primitives. I personally like the image because it displays the different transformations on the shapes and there are few things more soothing than an MS-Paint 'esque yin yang. It also has lots of interesting angles and layers which are fun to experiment with. By framing the yin yang with other shapes, we can really feel the idea of complexity being built from simplicity, which is a thought-worthy concept for a programmer. I'd like to use the symbol in future projects.
