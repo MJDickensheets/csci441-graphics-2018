@@ -97,18 +97,18 @@ the current plan. Assignments and due dates will be updated as they're assigned 
 
 ### March
 
-| Date     | Description                                                    | Assigned     | Due                                               | Recommended Reading |
-|----------|----------------------------------------------------------------|--------------|---------------------------------------------------|---------------------|
-| 3/1      | [Standard Template Library/Phong Shading](./notes/03-01.pdf)   |              |                                                   | FoCG 10.2, [Geeks for Geeks STL Notes](https://www.geeksforgeeks.org/the-c-standard-template-library-stl/)|
-| 3/6      | [Problem Session](./notes/03-06.pdf)                           |              | [Lab5](./labs/lab5/README.md)(anywhere on earth)  |                     |
-| 3/8      | Midterm                                                        | [Program 2]()|                                                   |                     |
-| 3/11     | No class (due date, any where on earth)                        |              | [Program 1](./programs/program1/README.md)        |                     |
-| 3/13     | No class (Spring Break)                                        |              |                                                   |                     |
-| 3/15     | No class (Spring Break)                                        |              |                                                   |                     |
-| 3/20     |                                                                | [Lab 6]()    |                                                   |                     |
-| 3/22     |                                                                |              |                                                   |                     |
-| 3/27     |                                                                | [Lab 7]()    | [Lab 6]()                                         |                     |
-| 3/29     |                                                                |              |                                                   |                     |
+| Date     | Description                                                    | Assigned                              | Due                                               | Recommended Reading |
+|----------|----------------------------------------------------------------|---------------------------------------|---------------------------------------------------|---------------------|
+| 3/1      | [Standard Template Library/Phong Shading](./notes/03-01.pdf)   |                                       |                                                   | FoCG 10.2, [Geeks for Geeks STL Notes](https://www.geeksforgeeks.org/the-c-standard-template-library-stl/)|
+| 3/6      | [Problem Session](./notes/03-06.pdf)                           |                                       | [Lab5](./labs/lab5/README.md)(anywhere on earth)  |                     |
+| 3/8      | Midterm                                                        | [Program 2]()                         |                                                   |                     |
+| 3/11     | No class (due date, any where on earth)                        |                                       | [Program 1](./programs/program1/README.md)        |                     |
+| 3/13     | No class (Spring Break)                                        | [Lab EC 1](./labs/lab-ec1/README.md)  |                                                   |                     |
+| 3/15     | No class (Spring Break)                                        |                                       |                                                   |                     |
+| 3/20     |                                                                | [Lab 6]()                             | [Lab EC 1](./labs/lab-ec1/README.md)              |                     |
+| 3/22     |                                                                |                                       |                                                   |                     |
+| 3/27     |                                                                | [Lab 7]()                             | [Lab 6]()                                         |                     |
+| 3/29     |                                                                |                                       |                                                   |                     |
 
 ### April
 
