@@ -18,6 +18,10 @@ public:
         set_to_identity();
     };
 
+    float operator()(int row, int col) const {
+        return values[idx(row, col)];
+    }
+
     void scale(float x, float y, float z) {
         set_to_identity();
         values[idx(0,0)] = x;
