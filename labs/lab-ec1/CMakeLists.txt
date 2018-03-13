@@ -10,7 +10,7 @@ include_directories(../lib/glfw/include)
 include_directories(../lib/glad/include)
 include_directories(../lib/csci441/include)
 
-set(LAB lab6-ec)
+set(LAB lab-ec1)
 add_executable(${LAB} main.cpp ../lib/glad/src/glad.c)
 target_link_libraries(${LAB} glfw ${GLFW_LIBRARIES})
 
