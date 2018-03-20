@@ -108,9 +108,9 @@ the current plan. Assignments and due dates will be updated as they're assigned 
 | 3/11     | No class (due date, any where on earth)                        |                                           | [Program 1](./programs/program1/README.md)        |                     |
 | 3/13     | No class (Spring Break)                                        | [Lab EC 1](./labs/lab-ec1/README.md)      |                                                   |                     |
 | 3/15     | No class (Spring Break)                                        |                                           |                                                   |                     |
-| 3/20     | Polygon Soup / Element Arrays                                  | [Lab 6]()                                 | [Lab EC 1](./labs/lab-ec1/README.md)              |                     |
+| 3/20     | Polygon Soup / Element Arrays                                  | [Lab 6](./labs/lab6/README.md)            | [Lab EC 1](./labs/lab-ec1/README.md)              |                     |
 | 3/22     | Doubly Connected Edge List                                     |                                           |                                                   | DutchBook 2.2       |
-| 3/27     |                                                                | [Lab 7]()                                 | [Lab 6]()                                         |                     |
+| 3/27     |                                                                | [Lab 7]()                                 | [Lab 6](./labs/lab6/README.md)                    |                     |
 | 3/29     |                                                                |                                           |                                                   |                     |
 
 ### April
