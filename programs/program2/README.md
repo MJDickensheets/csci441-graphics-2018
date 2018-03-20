@@ -36,12 +36,12 @@ space bar.
 
 Your character does not need to be anything special, but if you would like to
 add some flair, you may.  In camera view, you can put the camera directly behind
-the character for a neat effect.  I have supplied a set of simple characters
-that you can use if you like.  They are `obj` file format.  You can receive
-extra credit for loading in and rendering a character in camera mode.  It can
-also a lot of fun to trade mazes with your friends.  You can also receive extra
-credit if you load your mazes from a file. (I would suggest storing your mazes
-in obj format as well).
+the character for a neat effect.  I have supplied a set of simple characters in
+`models/`that you can use if you like.  They are `obj` file format.  You can
+receive extra credit for loading in and rendering a character in camera mode.
+It can also a lot of fun to trade mazes with your friends.  You can also receive
+extra credit if you load your mazes from a file. (I would suggest storing your
+mazes in obj format as well).
 
 ## Required Materials
 
