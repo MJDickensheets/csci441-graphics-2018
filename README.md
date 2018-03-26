@@ -59,6 +59,9 @@ Textbooks are optional but recommended
 (FoCG in recommended reading below).
 * [OpenGL Programming Guide, 9th Edition](https://www.amazon.com/OpenGL-Programming-Guide-Official-Learning/dp/0134495497)
 (referred to as GL Guide in recommended reading below).
+* [Computational Geometry: Algorithms and Applications 3rd Edition](https://link-springer-com.proxybz.lib.montana.edu:3443/book/10.1007/978-3-540-77974-2)
+(DutchBook in the recommended reading below, book is available online through
+the MSU library)
 
 ## Online Resources
 
@@ -92,36 +95,36 @@ the current plan. Assignments and due dates will be updated as they're assigned 
 | 2/13     | [Coordinate Transformations](./notes/02-13.pdf)           | [Lab 4](./labs/lab4/README.md)             | [Lab 3](./labs/lab3/README.md)  | FoCG 6.5, 4.2                     |
 | 2/15     | [Projections](./notes/02-15.pdf)                          |                                            |                                 | FoCG 7.0-.1                       |
 | 2/20     | [Projections, Camera](./notes/02-20.pdf)                  | [Program 1](./programs/program1/README.md) |                                 | FoCG 7.1-7.2                      |
-| 2/22     | Diffuse Shading                                           |                                            | [Lab 4](./labs/lab4/README.md)  | FoCG 10.1                         |
-| 2/27     | Triangulation/Transforming Normals                        | [Lab 5](./labs/lab5/README.md)             |                                 | FoCG 6.2.2, [David Eberly's trianguation notes](https://www.geometrictools.com/Documentation/TriangulationByEarClipping.pdf)|
+| 2/22     | [Diffuse Shading](./notes/02-22.pdf)                      |                                            | [Lab 4](./labs/lab4/README.md)  | FoCG 10.1                         |
+| 2/27     | [Triangulation/Transforming Normals](./notes/02-27.pdf)   | [Lab 5](./labs/lab5/README.md)             |                                 | FoCG 6.2.2, [David Eberly's trianguation notes](https://www.geometrictools.com/Documentation/TriangulationByEarClipping.pdf)|
 
 ### March
 
-| Date     | Description                                     | Assigned     | Due                                               | Recommended Reading |
-|----------|-------------------------------------------------|--------------|---------------------------------------------------|---------------------|
-| 3/1      | Standard Template Library/Phong Shading         |              |                                                   | FoCG 10.2, [Geeks for Geeks STL Notes](https://www.geeksforgeeks.org/the-c-standard-template-library-stl/)|
-| 3/6      |                                                 |              | [Lab5](./labs/lab5/README.md)(anywhere on earth)  |                     |
-| 3/8      | Midterm                                         | [Program 2]()|                                                   |                     |
-| 3/9      | No class (due date, any where on earth)         |              | [Program 1](./programs/program1/README.md)        |                     |
-| 3/13     | No class (Spring Break)                         |              |                                                   |                     |
-| 3/15     | No class (Spring Break)                         |              |                                                   |                     |
-| 3/20     |                                                 | [Lab 6]()    |                                                   |                     |
-| 3/22     |                                                 |              |                                                   |                     |
-| 3/27     |                                                 | [Lab 7]()    | [Lab 6]()                                         |                     |
-| 3/29     |                                                 |              |                                                   |                     |
+| Date     | Description                                                    | Assigned                                  | Due                                               | Recommended Reading |
+|----------|----------------------------------------------------------------|---------------------------------------    |---------------------------------------------------|---------------------|
+| 3/1      | [Standard Template Library/Phong Shading](./notes/03-01.pdf)   |                                           |                                                   | FoCG 10.2, [Geeks for Geeks STL Notes](https://www.geeksforgeeks.org/the-c-standard-template-library-stl/)|
+| 3/6      | [Problem Session](./notes/03-06.pdf)                           |                                           | [Lab5](./labs/lab5/README.md)(anywhere on earth)  |                     |
+| 3/8      | Midterm                                                        | [Program 2](./programs/program2/README.md)|                                                   |                     |
+| 3/11     | No class (due date, any where on earth)                        |                                           | [Program 1](./programs/program1/README.md)        |                     |
+| 3/13     | No class (Spring Break)                                        | [Lab EC 1](./labs/lab-ec1/README.md)      |                                                   |                     |
+| 3/15     | No class (Spring Break)                                        |                                           |                                                   |                     |
+| 3/20     | Polygon Soup / Element Arrays                                  | [Lab 6](./labs/lab6/README.md)            | [Lab EC 1](./labs/lab-ec1/README.md)              |                     |
+| 3/22     | Doubly Connected Edge List                                     |                                           |                                                   | DutchBook 2.2       |
+| 3/27     |                                                                | [Lab 7]()                                 | [Lab 6](./labs/lab6/README.md)                    |                     |
+| 3/29     |                                                                |                                           |                                                   |                     |
 
 ### April
 
-| Date     | Description                                 | Assigned     | Due                          | Recommended Reading |
-|----------|---------------------------------------------|--------------|------------------------------|---------------------|
-| 4/3      |                                             | [Lab 8]()    | [Lab 7]()                    |                     |
-| 4/5      |                                             | [Program 3]()| [Program 2]()                |                     |
-| 4/10     |                                             | [Lab 9]()    | [Lab 8]()                    |                     |
-| 4/12     |                                             |              |                              |                     |
-| 4/17     |                                             | [Lab 10]()   | [Lab 9]()                    |                     |
-| 4/19     |                                             |              |                              |                     |
-| 4/24     |                                             |              | [Lab 10]()                   |                     |
-| 4/26     |                                             |              | [Program 3]()                |                     |
+| Date     | Description                                 | Assigned     | Due                               | Recommended Reading |
+|----------|---------------------------------------------|--------------|-----------------------------------|---------------------|
+| 4/3      |                                             | [Lab 8]()    | [Lab 7]()                         |                     |
+| 4/5      |                                             | [Program 3]()| [Program 2](./programs/program2/) |                     |
+| 4/10     |                                             | [Lab 9]()    | [Lab 8]()                         |                     |
+| 4/12     |                                             |              |                                   |                     |
+| 4/17     |                                             | [Lab 10]()   | [Lab 9]()                         |                     |
+| 4/19     |                                             |              |                                   |                     |
+| 4/24     |                                             |              | [Lab 10]()                        |                     |
+| 4/26     |                                             |              | [Program 3]()                     |                     |
 
 ### May
 
@@ -134,7 +137,6 @@ the current plan. Assignments and due dates will be updated as they're assigned 
 
 Potential Upcoming topics:
 - The Depth Buffer
-- Virtual Trackball
 - Materials and Lights
 - Hierarchical Modeling
 - OpenGL Element Arrays
