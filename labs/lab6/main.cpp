@@ -3,6 +3,8 @@
 #include <sstream>
 #include <fstream>
 #include <cmath>
+#include <chrono>
+#include <thread>
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
@@ -61,9 +63,14 @@ Matrix processModel(const Matrix& model, GLFWwindow *window) {
     return trans * model;
 }
 
-void processInput(Matrix& model, GLFWwindow *window) {
+void processInput(bool& smooth, Matrix& model, GLFWwindow *window) {
     if (isPressed(window, GLFW_KEY_ESCAPE) || isPressed(window, GLFW_KEY_Q)) {
         glfwSetWindowShouldClose(window, true);
+    }
+    else if (isPressed(window, GLFW_KEY_SPACE)) {
+	if(smooth == true) smooth = false;
+	else smooth = true;
+	std::this_thread::sleep_for(std::chrono::milliseconds(150));
     }
     model = processModel(model, window);
 }
@@ -71,6 +78,7 @@ void processInput(Matrix& model, GLFWwindow *window) {
 void errorCallback(int error, const char* description) {
     fprintf(stderr, "GLFW Error: %s\n", description);
 }
+
 
 int main(void) {
     GLFWwindow* window;
@@ -106,9 +114,23 @@ int main(void) {
     }
 
     // create obj
-    Model obj(
+    /*Model obj(
             Torus(40, .75, .5, 1, .2, .4).coords,
             Shader("../vert.glsl", "../frag.glsl"));
+    */
+    // create objects from file
+    bool is_smooth = false;
+    Object flat(1, .2, .4, false);
+    flat.load_obj("../models/duck.obj");
+    Model obj1(
+	    flat.coords,
+	    Shader("../vert.glsl", "../frag.glsl"));
+
+    Object smooth(1, .2, .4, true);
+    smooth.load_obj("../models/duck.obj");
+    Model obj2(
+	    smooth.coords,
+	    Shader("../vert.glsl", "../frag.glsl"));
 
     // make a floor
     Model floor(
@@ -138,17 +160,19 @@ int main(void) {
     // set the light position
     Vector lightPos(3.75f, 3.75f, 4.0f);
 
+
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window)) {
-        // process input
-        processInput(obj.model, window);
-
+	// process input
+        if(is_smooth)processInput(is_smooth, obj2.model, window);
+	else processInput(is_smooth, obj1.model, window);
         /* Render here */
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         // render the object and the floor
-        renderer.render(camera, obj, lightPos);
+        if(is_smooth) renderer.render(camera, obj2, lightPos);
+	else renderer.render(camera, obj1, lightPos);
         renderer.render(camera, floor, lightPos);
 
         /* Swap front and back and poll for io events */

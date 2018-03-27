@@ -3,11 +3,12 @@
 
 #include <cstdlib>
 #include <vector>
+#include "DCEL.h"
 
 template <typename T, typename N, typename C>
 void add_vertex(T& coords, const N& x, const N& y, const N& z,
         const C& r, const C& g, const C& b,
-        const Vector& n=Vector(1,0,0), bool with_noise=false) {
+        const Vector& n, bool with_noise=false) {
     // adding color noise makes it easier to see before shading is implemented
     float noise = 1-with_noise*(rand()%150)/100.;
     coords.push_back(x);
@@ -72,6 +73,7 @@ public:
 
 };
 
+/*
 class Cylinder {
 public:
     std::vector<float> coords;
@@ -274,6 +276,114 @@ public:
                 add_vertex(coords, vip1j_x, vip1j_y, vip1j_z, r, g, b);
             }
         }
+    }
+
+
+};
+*/
+
+// Class for user inputted obj files
+class Object {
+public:
+    //define class objects
+    std::vector<float> coords;
+    std::vector<Vector> verticies;
+    std::vector<Vector> normals;
+    std::vector<GLushort> elements;
+    
+    float r, g, b;
+    bool smooth;
+    
+    //constructor to load object specs
+    Object(float r, float g, float b, bool smooth){
+        this->r = r;
+        this->g = g;
+        this->b = b;
+	this->smooth = smooth;
+    }
+    
+    // reads in file and populates vertex array
+    void load_obj(const char* filename){
+        std::ifstream in(filename, std::ios::in);
+        if (!in)
+        {
+            std::cerr << "Cannot open " << filename << std::endl; exit(1);
+        }
+        
+        std::string line;
+        while (getline(in, line))
+        {
+            if (line.substr(0,2) == "v ")
+            {
+                std::istringstream s(line.substr(2));
+		float x, y, z;
+                s >> x; s >> y; s >> z;
+                verticies.push_back(Vector(x, y, z));
+		
+            }
+            else if(line.substr(0,2) == "f ")
+            {
+                std::istringstream s(line.substr(2));
+                GLushort a,b,c;
+                s >> a; s >> b; s >> c;
+                a--; b--; c--;
+                elements.push_back(a); elements.push_back(b); elements.push_back(c);
+            }
+        }
+       
+	// do flat shading
+        if(!smooth){
+	    std::cout << smooth << std::endl;
+	    normals.resize(verticies.size(), Vector(0.0, 0.0, 0.0));
+        
+            for(int i = 0; i < elements.size(); i+=3){
+               GLushort ia = elements[i];
+	       GLushort ib = elements[i+1];
+	       GLushort ic = elements[i+2];
+	       Vector normal = (verticies[ib] - verticies[ia]).cross(verticies[ic] - verticies[ia]);
+	       normal = normal.normalized();
+	       normals[ia] = normals[ib] = normals[ic] = normal;
+	       add_vertex(coords, verticies[ia].x()/1100, verticies[ia].y()/1100, verticies[ia].z()/1100, r, g, b, normal);
+	       add_vertex(coords, verticies[ib].x()/1100, verticies[ib].y()/1100, verticies[ib].z()/1100, r, g, b, normal);
+	       add_vertex(coords, verticies[ic].x()/1100, verticies[ic].y()/1100, verticies[ic].z()/1100, r, g, b, normal);
+
+            }
+	}
+
+	// do smooth shading
+	else{
+	    std::vector<Vector> vert_norms;
+	    for(int j = 0; j < verticies.size(); j++){
+		    std::vector<Vector> temp_norms;
+		    for(int i = 0; i < elements.size(); i+=3){
+           	        GLushort ia = elements[i];
+	   	        GLushort ib = elements[i+1];
+	   	        GLushort ic = elements[i+2];
+		        if(ia == j || ib == j || ic == j){
+			    Vector normal = (verticies[ib] - verticies[ia]).cross(verticies[ic] - verticies[ia]);
+			    temp_norms.push_back(normal);
+		        }
+		    }
+		    Vector v_norm(0,0,0);
+		    while(!temp_norms.empty()){
+		        v_norm = Vector(v_norm.x() + temp_norms.back().x(), v_norm.y() + temp_norms.back().y(), v_norm.z() + temp_norms.back().z());
+		        temp_norms.pop_back();
+		    }
+		    v_norm = v_norm.normalized();
+		    vert_norms.push_back(v_norm);
+
+	    }
+
+	    for(int i = 0; i < elements.size(); i+=3){
+	       GLushort ia = elements[i];
+	       GLushort ib = elements[i+1];
+	       GLushort ic = elements[i+2];
+	       add_vertex(coords, verticies[ia].x()/1100, verticies[ia].y()/1100, verticies[ia].z()/1100, r, g, b, vert_norms[ia]);
+	       add_vertex(coords, verticies[ib].x()/1100, verticies[ib].y()/1100, verticies[ib].z()/1100, r, g, b, vert_norms[ib]);
+	       add_vertex(coords, verticies[ic].x()/1100, verticies[ic].y()/1100, verticies[ic].z()/1100, r, g, b, vert_norms[ic]);
+
+	    }
+	}
     }
 
 };
