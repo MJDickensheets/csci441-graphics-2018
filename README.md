@@ -110,20 +110,20 @@ the current plan. Assignments and due dates will be updated as they're assigned 
 | 3/15     | No class (Spring Break)                                        |                                           |                                                   |                     |
 | 3/20     | Polygon Soup / Element Arrays                                  | [Lab 6](./labs/lab6/README.md)            | [Lab EC 1](./labs/lab-ec1/README.md)              |                     |
 | 3/22     | Doubly Connected Edge List                                     |                                           |                                                   | DutchBook 2.2       |
-| 3/27     |                                                                | [Lab 7]()                                 | [Lab 6](./labs/lab6/README.md)                    |                     |
-| 3/29     |                                                                |                                           |                                                   |                     |
+| 3/27     |                                                                |                                           | [Lab 6](./labs/lab6/README.md)                    |                     |
+| 3/29     |                                                                | [Lab 7](./labs/lab7/README.md)            |                                                   |                     |
 
 ### April
 
 | Date     | Description                                 | Assigned     | Due                               | Recommended Reading |
 |----------|---------------------------------------------|--------------|-----------------------------------|---------------------|
-| 4/3      |                                             | [Lab 8]()    | [Lab 7]()                         |                     |
+| 4/3      |                                             |              |                                   |                     |
 | 4/5      |                                             | [Program 3]()| [Program 2](./programs/program2/) |                     |
-| 4/10     |                                             | [Lab 9]()    | [Lab 8]()                         |                     |
+| 4/10     |                                             | [Lab 8]()    | [Lab 7](./labs/lab7/README.md)    |                     |
 | 4/12     |                                             |              |                                   |                     |
-| 4/17     |                                             | [Lab 10]()   | [Lab 9]()                         |                     |
+| 4/17     |                                             | [Lab 9]()    | [Lab 8]()                         |                     |
 | 4/19     |                                             |              |                                   |                     |
-| 4/24     |                                             |              | [Lab 10]()                        |                     |
+| 4/24     |                                             |              | [Lab 9]()                         |                     |
 | 4/26     |                                             |              | [Program 3]()                     |                     |
 
 ### May
