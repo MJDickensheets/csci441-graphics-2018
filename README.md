@@ -108,23 +108,23 @@ the current plan. Assignments and due dates will be updated as they're assigned 
 | 3/11     | No class (due date, any where on earth)                        |                                           | [Program 1](./programs/program1/README.md)        |                     |
 | 3/13     | No class (Spring Break)                                        | [Lab EC 1](./labs/lab-ec1/README.md)      |                                                   |                     |
 | 3/15     | No class (Spring Break)                                        |                                           |                                                   |                     |
-| 3/20     | Polygon Soup / Element Arrays                                  | [Lab 6](./labs/lab6/README.md)            | [Lab EC 1](./labs/lab-ec1/README.md)              |                     |
+| 3/20     | [Polygon Soup / Element Arrays](./notes/03-20.pdf)             | [Lab 6](./labs/lab6/README.md)            | [Lab EC 1](./labs/lab-ec1/README.md)              |                     |
 | 3/22     | Doubly Connected Edge List                                     |                                           |                                                   | DutchBook 2.2       |
-| 3/27     |                                                                |                                           | [Lab 6](./labs/lab6/README.md)                    |                     |
-| 3/29     |                                                                | [Lab 7](./labs/lab7/README.md)            |                                                   |                     |
+| 3/27     | [Texture Mapping](./notes/03-27.pdf)                           |                                           | [Lab 6](./labs/lab6/README.md)                    |                     |
+| 3/29     | [Texture Mapping Pt 2](./notes/03-29.pdf)                      | [Lab 7](./labs/lab7/README.md)            |                                                   |                     |
 
 ### April
 
-| Date     | Description                                 | Assigned     | Due                               | Recommended Reading |
-|----------|---------------------------------------------|--------------|-----------------------------------|---------------------|
-| 4/3      |                                             |              |                                   |                     |
-| 4/5      |                                             | [Program 3]()| [Program 2](./programs/program2/) |                     |
-| 4/10     |                                             | [Lab 8]()    | [Lab 7](./labs/lab7/README.md)    |                     |
-| 4/12     |                                             |              |                                   |                     |
-| 4/17     |                                             | [Lab 9]()    | [Lab 8]()                         |                     |
-| 4/19     |                                             |              |                                   |                     |
-| 4/24     |                                             |              | [Lab 9]()                         |                     |
-| 4/26     |                                             |              | [Program 3]()                     |                     |
+| Date     | Description                                    | Assigned     | Due                               | Recommended Reading |
+|----------|------------------------------------------------|--------------|-----------------------------------|---------------------|
+| 4/3      | [Texture Mapping in OpenGL](./notes/04-03.pdf) |              |                                   |                     |
+| 4/5      | [Ray Tracing](./notes/04-05.pdf)               | [Program 3]()| [Program 2](./programs/program2/) |                     |
+| 4/10     |                                                | [Lab 8]()    | [Lab 7](./labs/lab7/README.md)    |                     |
+| 4/12     |                                                |              |                                   |                     |
+| 4/17     |                                                | [Lab 9]()    | [Lab 8]()                         |                     |
+| 4/19     |                                                |              |                                   |                     |
+| 4/24     |                                                |              | [Lab 9]()                         |                     |
+| 4/26     |                                                |              | [Program 3]()                     |                     |
 
 ### May
 
