@@ -75,7 +75,7 @@ bool isSpaceEvent(GLFWwindow *window) {
     return trigger;
 }
 
-void processInput(Matrix& model, GLFWwindow *window) {
+void processInput(int& texChoice, Matrix& model, GLFWwindow *window) {
     if (isPressed(window, GLFW_KEY_ESCAPE) || isPressed(window, GLFW_KEY_Q)) {
         glfwSetWindowShouldClose(window, true);
     } else if (isSpaceEvent(window)) {
@@ -83,6 +83,7 @@ void processInput(Matrix& model, GLFWwindow *window) {
          * TODO: PART-6 for demo, add code here to change the mode without
          * having massive flickering
          **/
+	 texChoice = (texChoice+1)%3;
     }
     model = processModel(model, window);
 }
@@ -97,6 +98,28 @@ GLuint createTexture() {
     /**
      * TODO: Part-2 create the checker texture
      */
+
+    const int WIDTH = 250;
+    const int HEIGHT = 250;
+
+    GLuint tex[62500];
+    for(int i = 0; i < 250; i++){
+	for(int j = 0; j < 250; j++){
+	    int currentPixel = i*WIDTH + j;
+	    if(i%50 < 25 && j%50 < 25) tex[currentPixel] = 0x00000000;
+	    else if(i%50 > 25 && j%50 > 25) tex[currentPixel] = 0x00000000;
+	    else if(i%50 < 25 && j%50 > 25) tex[currentPixel] = 0xFFFFFFFF;
+	    else if(i%50 > 25 && j%50 < 25) tex[currentPixel] = 0xFFFFFFFF;
+	}
+    }
+
+    glGenTextures(1, &textureID);
+    glBindTexture(GL_TEXTURE_2D, textureID);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, WIDTH, HEIGHT, 0, GL_RGBA, GL_UNSIGNED_INT_8_8_8_8, tex);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+    //glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
+    //glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
 
     return textureID;
 }
@@ -119,6 +142,13 @@ GLuint loadTexture(const std::string& path, bool flip=true) {
         /**
          * TODO: Part-3 create a texture map for an image
          */
+	glBindTexture(GL_TEXTURE_2D, textureID);
+	glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, data);
+	glGenerateMipmap(GL_TEXTURE_2D);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
         stbi_image_free(data);
     } else {
@@ -177,7 +207,7 @@ int main(void) {
 
     /* init the shape */
     Cube shape;
-    // Sphere shape(20, 1);
+    //Sphere shape(20, 1);
 
     // copy vertex data
     GLuint vbo;
@@ -191,10 +221,13 @@ int main(void) {
     glBindVertexArray(vao);
 
     // setup position attribute
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3*sizeof(float), (void*)0);
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5*sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
 
     /** TODO: Part1 add vertex attribute pointer for texture coordinates */
+    
+    glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5*sizeof(float), (void*)(3*sizeof(float)));
+    glEnableVertexAttribArray(1);
 
     // and use z-buffering
     glEnable(GL_DEPTH_TEST);
@@ -204,11 +237,26 @@ int main(void) {
 
     // setup the textures
     /** TODO: Part2 create and bind the texture. */
+    glActiveTexture(GL_TEXTURE0);
+    GLuint textureQuestion = loadTexture("../img/question.png");
+    glBindTexture(GL_TEXTURE_2D, textureQuestion);
+
+    glActiveTexture(GL_TEXTURE1);
+    GLuint textureChecker = createTexture();
+    glBindTexture(GL_TEXTURE_2D, textureChecker);
+
+    glActiveTexture(GL_TEXTURE2);
+    GLuint textureGiraffe = loadTexture("../img/giraffe-fur.jpg");
+    glBindTexture(GL_TEXTURE_2D, textureGiraffe);
+    
+
+    //choose texture
+    int textureChoice = 0;
 
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window)) {
         // process input
-        processInput(model, window);
+        processInput(textureChoice, model, window);
 
         /* Render here */
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
@@ -221,6 +269,15 @@ int main(void) {
         Uniform::set(shader.id(), "projection", camera.projection);
         Uniform::set(shader.id(), "camera", camera.look_at());
         Uniform::set(shader.id(), "eye", camera.eye);
+	if(textureChoice == 0){
+	    Uniform::set(shader.id(), "ourTexture", 0);
+	}
+	else if(textureChoice == 1){
+	    Uniform::set(shader.id(), "ourTexture", 1);
+	}
+	else if(textureChoice == 2){
+	    Uniform::set(shader.id(), "ourTexture", 2);
+	}
 
         // render the cube
         glBindVertexArray(vao);
