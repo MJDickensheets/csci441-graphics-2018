@@ -15,7 +15,9 @@ am image that looks like
 
 ## Recommended Reading
 
-**TODO**
+* Foundations of Computer Graphics, Chapter 4.1-.4
+* [Wikipedia: Cramers Rule](https://en.wikipedia.org/wiki/Cramer%27s_rule)
+* [Paul Rademacher's notes on Ray Tracing](https://www.cs.unc.edu/~rademach/xroads-RT/RTarticle.html)
 
 ## Note
 
