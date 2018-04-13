@@ -120,7 +120,7 @@ the current plan. Assignments and due dates will be updated as they're assigned 
 | 4/3      | [Texture Mapping in OpenGL](./notes/04-03.pdf) |                                               |                                               | LoGL "Textures"     |
 | 4/5      | [Ray Tracing](./notes/04-05.pdf)               | [Program 3](./programs/program3/README.md)    | [Program 2](./programs/program2/README.md)    | FoCG 4.1,.3         |
 | 4/10     | Computing View Rays                            | [Lab 8](./labs/lab8/README.md)                | [Lab 7](./labs/lab7/README.md)                | FoCG 4.3            |
-| 4/12     | Computing Intersections                        |                                               |                                               | FoCG 4.4            |
+| 4/12     | [Computing Intersections](./notes/04-12.pdf)   |                                               |                                               | FoCG 4.4            |
 | 4/17     | Quaternions                                    | [Lab 9]()                                     | [Lab 8](./labs/lab8/README.md)                | FoCG 16.2           |
 | 4/19     | Spatial Data Structures                        |                                               |                                               | FoCG 12.3           |
 | 4/24     | Where to go next                               |                                               | [Lab 9]()                                     |                     |
