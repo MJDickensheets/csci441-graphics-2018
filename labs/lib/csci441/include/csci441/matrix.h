@@ -30,6 +30,10 @@ public:
         return values[idx(row, col)];
     }
 
+    void set(int row, int col, float value) {
+        values[idx(row, col)] = value;
+    }
+
     void scale(float x, float y, float z) {
         set_to_identity();
         values[idx(0,0)] = x;
