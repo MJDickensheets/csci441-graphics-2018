@@ -17,7 +17,7 @@ class Vector {
 public:
     float values[N_COORDS];
 
-    Vector(float x, float y, float z, float w=1) : values{x, y, z, w} { }
+    Vector(float x=0, float y=0, float z=0, float w=1) : values{x, y, z, w} { }
 
     Vector operator-(const Vector& v) const {
         return Vector(
