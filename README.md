@@ -78,10 +78,10 @@ the current plan. Assignments and due dates will be updated as they're assigned 
 
 | Date | Description                                                         | Assigned                       | Due                            | Recommended Reading                        |
 |------|---------------------------------------------------------------------|--------------------------------|--------------------------------|--------------------------------------------|
-| 1/11 | [Intro - applications of computer graphics](./notes/01-11.pdf)       | [Lab 0](./labs/lab0/README.md) |                                | FoCG Chapter 1                             |
+| 1/11 | [Intro - applications of computer graphics](./notes/01-11.pdf)      | [Lab 0](./labs/lab0/README.md) |                                | FoCG Chapter 1                             |
 | 1/16 | C++ overview / git basics                                           |                                |                                |                                            |
-| 1/18 | [Rasterization / Barycentric coordinates / Color](./notes/01-18.pdf) | [Lab 1](./labs/lab1/README.md) | [Lab 0](./labs/lab0/README.md) | FoCG 2.7.1, 3.3                            |
-| 1/23 | [Barycentric coordinates](./notes/01-23.pdf)                         |                                |                                | FoCG 8.1.2                                 |
+| 1/18 | [Rasterization / Barycentric coordinates / Color](./notes/01-18.pdf)| [Lab 1](./labs/lab1/README.md) | [Lab 0](./labs/lab0/README.md) | FoCG 2.7.1, 3.3                            |
+| 1/23 | [Barycentric coordinates](./notes/01-23.pdf)                        |                                |                                | FoCG 8.1.2                                 |
 | 1/25 | [Overview of graphics pipeline](./notes/01-25.pdf)                  | [Lab 2](./labs/lab2/README.md) | [Lab 1](./labs/lab0/README.md) | GL Chapter 1, LoGL "Hello Tri"             |
 | 1/30 | [Vectors / Coordinates / OpenGL basics](./notes/01-30.pdf)          |                                |                                | FoCG 2, LoGL "Hello Window" & "Hello Tri"  |
 
