@@ -19,8 +19,20 @@ public:
         set_to_identity();
     };
 
+    Matrix(const glm::mat4& m) {
+        for (int i = 0; i < 4; ++i) {
+            for (int j = 0; j < 4; ++j) {
+                values[idx(i,j)] = m[j][i];
+            }
+        }
+    };
+
     float operator()(int row, int col) const {
         return values[idx(row, col)];
+    }
+
+    void set(int row, int col, float value) {
+        values[idx(row, col)] = value;
     }
 
     void scale(float x, float y, float z) {
