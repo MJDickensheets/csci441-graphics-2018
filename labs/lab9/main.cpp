@@ -96,6 +96,23 @@ Matrix getModelMatrixLerp(const Vector& from, const Vector& to, float t) {
     // Construct two matrices, one using 'from' and one using 'to'.
     // Make sure the order of rotations is rotZ*rotY*rotX to match up
     // with later parts.
+   
+    glm::mat4 fromMat, toMat, rot;
+
+    fromMat = glm::rotate(fromMat, from.z(), glm::vec3(0,0,1));
+    fromMat = glm::rotate(fromMat, from.y(), glm::vec3(0,1,0));
+    fromMat = glm::rotate(fromMat, from.x(), glm::vec3(1,0,0));
+
+    toMat = glm::rotate(toMat, to.z(), glm::vec3(0,0,1));
+    toMat = glm::rotate(toMat, to.y(), glm::vec3(0,1,0));
+    toMat = glm::rotate(toMat, to.x(), glm::vec3(1,0,0));
+
+    for(int i = 0; i < 4; ++i){
+	for(int j = 0; j < 4; ++j){
+	    rot[i][j] = (1-t) * fromMat[i][j] + t * toMat[i][j];
+	}
+    }
+ 
 
     // Then linearly interpolate the elements of the matrices using variable 't'.
     // note do not use the glm method
@@ -105,7 +122,8 @@ Matrix getModelMatrixLerp(const Vector& from, const Vector& to, float t) {
     // Return a Matrix.  If you have a glm::mat4,
     // you can construct a Matrix from a glm matrix using the
     // constructor Matrix(glm::mat4)
-    return Matrix();
+    //return matZ * matY * matX;
+    return Matrix(rot);
 }
 
 
@@ -118,11 +136,20 @@ Matrix getModelMatrixEuler(const Vector& from, const Vector& to, float t) {
     // Then construct a matrix using the linearly interpolated Euler angles
     // Notice how the second cube is just being
     // rotated rather than scaled and skewed.
+    
+    float x = (1-t) * from.x() + t * to.x();
+    float y = (1-t) * from.y() + t * to.y();
+    float z = (1-t) * from.z() + t * to.z();
+
+    glm::mat4 rot;
+    rot = glm::rotate(rot, z, glm::vec3(0,0,1));
+    rot = glm::rotate(rot, y, glm::vec3(0,1,0));
+    rot = glm::rotate(rot, x, glm::vec3(1,0,0));
 
     // Return a Matrix.  If you have a glm::mat4,
     // you can construct a Matrix from a glm matrix using the
     // constructor Matrix(glm::mat4)
-    return Matrix();
+    return Matrix(rot);
 }
 
 
@@ -130,7 +157,15 @@ Matrix getModelMatrixQuat(const Vector& from, const Vector& to, float t) {
     // Part 3 - Quaternions are another way to represent orientation.
     // glm has a quaternion data structure called quat. It's constructor
     // can take a vec3 that represents Euler angles. Construct two quaternions
-    // using the from and to euler angles.
+    // using the from and to euler angles
+    glm::vec3 fromVec = glm::vec3(from.x(), from.y(), from.z());
+    glm::vec3 toVec = glm::vec3(to.x(), to.y(), to.z());
+
+    glm::quat fromQuat = glm::quat(fromVec);
+    glm::quat toQuat = glm::quat(toVec);
+
+    glm::quat slerped = glm::slerp(fromQuat, toQuat, t);
+    glm::mat4 rot = glm::toMat4(slerped);
 
     // Interpolate the two quaternions using glm::slerp. slerp stands for
     // spherical linear interpolation and is how quaternions can be animated
@@ -146,7 +181,7 @@ Matrix getModelMatrixQuat(const Vector& from, const Vector& to, float t) {
     // Return a Matrix.  If you have a glm::mat4,
     // you can construct a Matrix from a glm matrix using the
     // constructor Matrix(glm::mat4)
-    return Matrix();
+    return Matrix(rot);
 }
 
 
